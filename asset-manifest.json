@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/furnace-fest/static/css/main.cf462336.css",
+    "main.js": "/furnace-fest/static/js/main.d929459f.js",
+    "static/js/787.7065bced.chunk.js": "/furnace-fest/static/js/787.7065bced.chunk.js",
+    "index.html": "/furnace-fest/index.html",
+    "main.cf462336.css.map": "/furnace-fest/static/css/main.cf462336.css.map",
+    "main.d929459f.js.map": "/furnace-fest/static/js/main.d929459f.js.map",
+    "787.7065bced.chunk.js.map": "/furnace-fest/static/js/787.7065bced.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf462336.css",
+    "static/js/main.d929459f.js"
+  ]
+}
