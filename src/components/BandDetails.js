@@ -1,5 +1,5 @@
-import React from 'react';
-import {css} from '@emotion/css';
+import React from "react";
+import { css } from "@emotion/css";
 
 const styles = css`
   background-color: #15aad4;
@@ -40,13 +40,11 @@ export default function BandDetails({ band, handleOnClose }) {
           <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.58 12 5 17.58 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
         </svg>
       </button>
-      <h2>{band.name.split(',').reverse().join(' ')}</h2>
+      <h2>{band.name.split(",").reverse().join(" ")}</h2>
       <p>
-        Playing on {band.dateDisplay} at {band.time} on the {band.stage} stage.
+        Playing on {band.dateDisplay} at {band.time} on stage {band.stageId}
       </p>
-      <p>
-        More info coming soon.
-      </p>
+      <p>More info coming soon.</p>
     </div>
   );
 }
