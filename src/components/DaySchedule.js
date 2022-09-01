@@ -274,7 +274,6 @@ export default function DaySchedule({ bandsByDay }) {
   });
 
   const onUserItemChange = (id) => {
-    console.log("change", id);
     setUserSchedule({
       ...userSchedule,
       [id]: !userSchedule[id],
@@ -284,7 +283,6 @@ export default function DaySchedule({ bandsByDay }) {
   const [showUserSchedule, setShowUserSchedule] = useState(false);
 
   useEffect(() => {
-    console.log("side effect", userSchedule);
     localStorage.setItem("userSchedule", JSON.stringify(userSchedule));
   }, [userSchedule]);
 
