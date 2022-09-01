@@ -234,7 +234,7 @@ function getParsedTime(time) {
       hour: "numeric",
       minute: "2-digit",
     });
-    return d.split(" ")[0];
+    return d;
   });
 }
 
