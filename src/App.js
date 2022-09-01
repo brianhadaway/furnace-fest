@@ -52,9 +52,10 @@ const styles = css`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1024px;
-    padding-block: 30px;
+    padding: 30px 0;
 
     @media (min-width: 720px) {
       flex-direction: row;

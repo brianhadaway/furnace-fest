@@ -1,11 +1,10 @@
-import React from 'react';
-import { ReactSearchAutocomplete } from 'react-search-autocomplete';
-import PropTypes from 'prop-types';
-import {css} from "@emotion/css";
+import React from "react";
+import { ReactSearchAutocomplete } from "react-search-autocomplete";
+import PropTypes from "prop-types";
+import { css } from "@emotion/css";
 
 const styles = css`
-  margin-block: 20px 50px;
-  margin-inline: auto;
+  margin: 20px auto 50px;
   width: 375px;
   z-index: 10;
 

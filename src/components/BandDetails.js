@@ -5,7 +5,7 @@ import moment from "moment";
 const styles = css`
   background-color: #15aad4;
   color: white;
-  padding-block: 25px;
+  padding: 25px 0;
   position: relative;
   z-index: 1;
 

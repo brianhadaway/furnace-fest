@@ -8,13 +8,13 @@ const scheduleStyles = css`
 
   .day-nav {
     background: #222;
-    padding-block: 5px;
+    padding: 5px 0;
     position: sticky;
     top: 0;
     z-index: 10;
 
     a {
-      margin-inline: 5px;
+      margin: 0 5px;
       text-decoration: none;
 
       &.day-active {

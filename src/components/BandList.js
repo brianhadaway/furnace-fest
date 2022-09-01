@@ -26,7 +26,8 @@ const styles = css`
     flex-direction: column;
     justify-content: center;
     list-style: none;
-    margin-inline: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     padding: 0;
 
     @media (min-width: 720px) {
@@ -53,7 +54,8 @@ const styles = css`
       color: white;
       font-size: 2rem;
       font-weight: 1000;
-      margin-inline: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
 
     &.tier-2 {

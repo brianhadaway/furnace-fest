@@ -16,7 +16,8 @@ const scheduleStyles = css`
   --user-color: orange;
 
   .grid-line {
-    border-block: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    border-top: 1px dashed gray;
     color: gray;
     display: none;
     grid-column-start: 1;
@@ -209,7 +210,7 @@ const scheduleStyles = css`
   }
 
   .userScheduleToggle {
-    margin-block: 10px 0;
+    margin: 10px 0 0;
   }
 `;
 

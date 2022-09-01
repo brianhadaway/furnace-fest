@@ -9,7 +9,7 @@ body {
   header {
     background-color: white;
     border-bottom: 8px solid #15aad4;
-    padding-block: 82px 40px;
+    padding: 82px 0 40px;
     position: sticky;
     top: 0;
     z-index: 10;
