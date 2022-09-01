@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/css";
 import { Link } from "react-router-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import bands from "./data/bands.json";
 import "./App.css";
@@ -109,26 +109,26 @@ export default function App() {
         rel="stylesheet"
       ></link>
 
-      <BrowserRouter>
+      <HashRouter>
         <nav className="site-nav">
-          <Link to="/furnace-fest">Home | </Link>
-          <Link to="/furnace-fest/schedule/friday">Schedule</Link>
+          <Link to="/">Home | </Link>
+          <Link to="/schedule/friday">Schedule</Link>
         </nav>
         <Routes>
           <Route
-            path="/furnace-fest"
+            path="/"
             element={
               <FlyerSearch bands={bands} bandsByDay={bandsByDayByTier} />
             }
           />
-          <Route path="/furnace-fest/schedule" element={<Schedule />}>
+          <Route path="/schedule" element={<Schedule />}>
             <Route
               path=":day"
               element={<DaySchedule bandsByDay={bandsByDay} />}
             />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <footer>
         <a href="https://www.furnacefest.us/">FurnaceFest.us</a>
         <div>

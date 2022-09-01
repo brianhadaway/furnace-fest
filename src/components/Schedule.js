@@ -30,8 +30,6 @@ const scheduleStyles = css`
 `;
 
 //@TODO
-//Filter by Stage
-//Search
 //schedule conflicts (done in stackblitz)
 //Save schedule to localStorage
 //Firebase integration (schedule api, auth, user schedules)
@@ -46,7 +44,7 @@ export default function Schedule() {
         {Object.keys(DAYS).map((day) => {
           return (
             <Link
-              to={`/furnace-fest/schedule/${DAYS[day]}`}
+              to={`/schedule/${DAYS[day]}`}
               key={DAYS[day]}
               className={`${tabClass(DAYS[day])} date-pill`}
             >
