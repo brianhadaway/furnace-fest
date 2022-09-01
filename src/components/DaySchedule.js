@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { css } from "@emotion/css";
+import moment from "moment";
 
 const scheduleStyles = css`
   --border-radius: 6px;
@@ -230,11 +231,7 @@ function getGridPosition(time) {
 
 function getParsedTime(time) {
   return time.map((part) => {
-    const d = new Date(part).toLocaleTimeString([], {
-      hour: "numeric",
-      minute: "2-digit",
-    });
-    return d;
+    return moment(part).format("LT");
   });
 }
 
@@ -352,7 +349,7 @@ export default function DaySchedule({ bandsByDay }) {
                 gridRowEnd,
               }}
             >
-              <div class="show-info-wrapper">
+              <div className="show-info-wrapper">
                 <h3>{show.name.split(",").reverse().join(" ")}</h3>
                 <p>
                   {parsedTime[0]} - {parsedTime[1]}
