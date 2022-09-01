@@ -4,26 +4,10 @@ import Search from "./Search";
 import BandList from "./BandList";
 import BandDetails from "./BandDetails";
 
-export default function FlyerSearch({ bands }) {
+export default function FlyerSearch({ bands, bandsByDay }) {
   const [selectedBands, setSelectedBands] = useState({});
   const [detailsVisible, setDetailsVisible] = useState(false);
   const [detailBand, setDetailBand] = useState(null);
-
-  const bandsByDay = bands.reduce((acc, band) => {
-    const { date, tier } = band;
-
-    if (typeof acc[date] === "undefined") {
-      acc[date] = {};
-    }
-
-    if (typeof acc[date][tier] === "undefined") {
-      acc[date][tier] = [];
-    }
-
-    acc[date][tier].push(band);
-
-    return acc;
-  }, {});
 
   const handleOnSearch = (string, results) => {
     // onSearch will have as the first callback parameter

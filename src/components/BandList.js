@@ -1,5 +1,6 @@
-import React from 'react';
-import {css} from '@emotion/css';
+import React from "react";
+import { css } from "@emotion/css";
+import { DAYS } from "../App";
 
 const styles = css`
   align-items: center;
@@ -66,7 +67,8 @@ const styles = css`
       padding: 5px 12px;
     }
 
-    &.selected, &:hover {
+    &.selected,
+    &:hover {
       color: #15aad4;
     }
   }
@@ -74,9 +76,9 @@ const styles = css`
 
 export default function BandList({ bands, selectedBands, onClick }) {
   const dates = [
-    { key: 'Fri', display: 'Friday Sep 23' },
-    { key: 'Sat', display: 'Saturday Sep 24' },
-    { key: 'Sun', display: 'Sunday Sep 25' },
+    { key: DAYS.FRI, display: "Friday Sep 23" },
+    { key: DAYS.SAT, display: "Saturday Sep 24" },
+    { key: DAYS.SUN, display: "Sunday Sep 25" },
   ];
   const tiers = [1, 2, 3];
   return (
@@ -96,10 +98,10 @@ export default function BandList({ bands, selectedBands, onClick }) {
                         onClick={() => onClick(band)}
                         title={`${stage} stage @ ${time}`}
                         className={`band tier-${tier} ${
-                          selectedBands[id] ? 'selected' : ''
+                          selectedBands[id] ? "selected" : ""
                         }`}
                       >
-                        {name.split(',').reverse().join(' ')}
+                        {name.split(",").reverse().join(" ")}
                       </li>
                     );
                   })}

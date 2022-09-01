@@ -1,11 +1,18 @@
 import React from "react";
 import { css } from "@emotion/css";
 import { Link, Outlet, useParams } from "react-router-dom";
+import { DAYS } from "../App";
 
 const scheduleStyles = css`
   padding: 10px;
 
   .day-nav {
+    background: #222;
+    padding-block: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
     a {
       margin-inline: 5px;
       text-decoration: none;
@@ -23,18 +30,11 @@ const scheduleStyles = css`
 `;
 
 //@TODO
-//Day Nav - done (unstyled)
 //Filter by Stage
 //Search
 //schedule conflicts (done in stackblitz)
 //Save schedule to localStorage
 //Firebase integration (schedule api, auth, user schedules)
-
-const DAYS = Object.freeze({
-  FRI: "friday",
-  SAT: "saturday",
-  SUN: "sunday",
-});
 
 export default function Schedule() {
   const { day } = useParams();
@@ -47,7 +47,7 @@ export default function Schedule() {
           return (
             <Link
               to={`/furnace-fest/schedule/${DAYS[day]}`}
-              key={DAYS.FRI}
+              key={DAYS[day]}
               className={`${tabClass(DAYS[day])} date-pill`}
             >
               {DAYS[day]}

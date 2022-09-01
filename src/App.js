@@ -10,7 +10,17 @@ import FlyerSearch from "./components/FlyerSearch";
 import Schedule from "./components/Schedule";
 import DaySchedule from "./components/DaySchedule";
 
+export const DAYS = Object.freeze({
+  FRI: "friday",
+  SAT: "saturday",
+  SUN: "sunday",
+});
+
 const styles = css`
+  * {
+    box-sizing: border-box;
+  }
+
   .site-nav {
     background: white;
     border-bottom: 8px solid #15aad4;
@@ -36,7 +46,7 @@ const styles = css`
 
   footer {
     align-items: center;
-    background-color: black;
+    background-color: #222;
     color: #8e8e8e;
     display: flex;
     flex-direction: column;
@@ -55,6 +65,40 @@ const styles = css`
   }
 `;
 
+const bandsByDayByTier = bands.reduce((acc, band) => {
+  const { date, tier } = band;
+
+  if (typeof acc[date] === "undefined") {
+    acc[date] = {};
+  }
+
+  if (typeof acc[date][tier] === "undefined") {
+    acc[date][tier] = [];
+  }
+
+  acc[date][tier].push(band);
+
+  return acc;
+}, {});
+
+const bandsByDay = bands.reduce((acc, band) => {
+  const { date } = band;
+
+  if (typeof acc[date] === "undefined") {
+    acc[date] = [];
+  }
+
+  acc[date].push(band);
+
+  return acc;
+}, {});
+
+Object.keys(DAYS).map((day) => {
+  bandsByDay[DAYS[day]].sort(
+    (a, b) => new Date(a.time[0]) - new Date(b.time[0])
+  );
+});
+
 export default function App() {
   return (
     <div className={styles}>
@@ -71,9 +115,17 @@ export default function App() {
           <Link to="/furnace-fest/schedule/friday">Schedule</Link>
         </nav>
         <Routes>
-          <Route path="/furnace-fest" element={<FlyerSearch bands={bands} />} />
+          <Route
+            path="/furnace-fest"
+            element={
+              <FlyerSearch bands={bands} bandsByDay={bandsByDayByTier} />
+            }
+          />
           <Route path="/furnace-fest/schedule" element={<Schedule />}>
-            <Route path=":day" element={<DaySchedule />} />
+            <Route
+              path=":day"
+              element={<DaySchedule bandsByDay={bandsByDay} />}
+            />
           </Route>
         </Routes>
       </BrowserRouter>
