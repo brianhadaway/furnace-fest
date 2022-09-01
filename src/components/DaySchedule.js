@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { css } from "@emotion/css";
-
-//@TODO - fetch schedule here using the :day param
-//@TODO - Filter by stage when mobile
 
 const scheduleStyles = css`
   --border-radius: 6px;
@@ -14,6 +11,8 @@ const scheduleStyles = css`
   --stage1text: white;
   --stage2text: black;
   --column-gap: 40px;
+  --album-play-color: dodgerblue;
+  --user-color: orange;
 
   .grid-line {
     border-block: 1px dashed gray;
@@ -45,7 +44,7 @@ const scheduleStyles = css`
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     padding: 10px;
     position: sticky;
-    top: 33px; //day-nav height
+    top: 32px; //day-nav height
     width: 100%;
     z-index: 10;
 
@@ -127,8 +126,8 @@ const scheduleStyles = css`
     border-radius: var(--border-radius);
     color: var(--text-color);
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 10px;
     padding: 10px;
     text-align: left;
@@ -155,7 +154,18 @@ const scheduleStyles = css`
     }
 
     &.album-play {
-      border-right: 6px solid #0058a3;
+      border-right: 6px solid var(--album-play-color);
+    }
+
+    &.user-selected {
+      background: repeating-linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.1) 0px,
+          rgba(0, 0, 0, 0.1) 20px,
+          var(--item-color) 20px,
+          var(--item-color) 40px
+        ),
+        var(--item-color);
     }
 
     h3 {
@@ -172,7 +182,7 @@ const scheduleStyles = css`
     }
 
     .album-play-pill {
-      background: #0058a3;
+      background: var(--album-play-color);
       border-radius: 5px;
       color: white;
       font-size: 0.6rem;
@@ -181,6 +191,22 @@ const scheduleStyles = css`
       text-transform: uppercase;
       width: fit-content;
     }
+
+    button {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      font-size: 16px;
+      font-weight: 900;
+      height: 32px;
+      justify-content: center;
+      padding: 0;
+      width: 32px;
+    }
+  }
+
+  .userScheduleToggle {
+    margin-block: 10px 0;
   }
 `;
 
@@ -241,6 +267,27 @@ export default function DaySchedule({ bandsByDay }) {
     }, {})
   );
 
+  const [userSchedule, setUserSchedule] = useState(() => {
+    const saved = localStorage.getItem("userSchedule");
+    const initialValue = JSON.parse(saved);
+    return initialValue || {};
+  });
+
+  const onUserItemChange = (id) => {
+    console.log("change", id);
+    setUserSchedule({
+      ...userSchedule,
+      [id]: !userSchedule[id],
+    });
+  };
+
+  const [showUserSchedule, setShowUserSchedule] = useState(false);
+
+  useEffect(() => {
+    console.log("side effect", userSchedule);
+    localStorage.setItem("userSchedule", JSON.stringify(userSchedule));
+  }, [userSchedule]);
+
   return (
     <div className={scheduleStyles}>
       <div className="stage-header-grid">
@@ -261,6 +308,12 @@ export default function DaySchedule({ bandsByDay }) {
             );
           })}
         </div>
+        <button
+          className="userScheduleToggle"
+          onClick={() => setShowUserSchedule(!showUserSchedule)}
+        >
+          {showUserSchedule ? "Show All Bands" : "Show My Schedule"}
+        </button>
       </div>
       <div className="grid-container">
         {hours.map((hour, i) => {
@@ -277,16 +330,20 @@ export default function DaySchedule({ bandsByDay }) {
           );
         })}
         {bandsByDay[day].map((show) => {
-          if (!stageFilter[show.stageId]) {
+          const isUserSelected = userSchedule[show.id];
+          if (
+            !stageFilter[show.stageId] ||
+            (showUserSchedule && !isUserSelected)
+          ) {
             return;
           }
           const [gridRowStart, gridRowEnd] = getGridPosition(show.time);
           const parsedTime = getParsedTime(show.time);
+          const userScheduleClass = isUserSelected ? "user-selected" : "";
+          const albumPlayClass = show.albumPlay ? "album-play" : "";
           return (
             <div
-              className={`grid-item stage-${show.stageId} ${
-                show.albumPlay ? "album-play" : ""
-              }`}
+              className={`grid-item stage-${show.stageId} ${albumPlayClass} ${userScheduleClass}`}
               key={show.id}
               style={{
                 gridColumnStart: show.stageId + 2,
@@ -294,13 +351,25 @@ export default function DaySchedule({ bandsByDay }) {
                 gridRowEnd,
               }}
             >
-              <h3>{show.name.split(",").reverse().join(" ")}</h3>
-              <p>
-                {parsedTime[0]} - {parsedTime[1]}
-              </p>
-              {show.albumPlay && (
-                <div className="album-play-pill">Album Play</div>
-              )}
+              <div class="show-info-wrapper">
+                <h3>{show.name.split(",").reverse().join(" ")}</h3>
+                <p>
+                  {parsedTime[0]} - {parsedTime[1]}
+                </p>
+                {show.albumPlay && (
+                  <div className="album-play-pill">Album Play</div>
+                )}
+              </div>
+
+              <button
+                type="button"
+                title={`${
+                  isUserSelected ? "Remove from" : "Add to"
+                } my schedule`}
+                onClick={() => onUserItemChange(show.id)}
+              >
+                {isUserSelected ? "-" : "+"}
+              </button>
             </div>
           );
         })}

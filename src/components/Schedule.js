@@ -31,7 +31,6 @@ const scheduleStyles = css`
 
 //@TODO
 //schedule conflicts (done in stackblitz)
-//Save schedule to localStorage
 //Firebase integration (schedule api, auth, user schedules)
 
 export default function Schedule() {
