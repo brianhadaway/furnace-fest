@@ -2,6 +2,7 @@ import React from "react";
 import { css } from "@emotion/css";
 import { Link } from "react-router-dom";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import moment from "moment";
 
 import bands from "./data/bands.json";
 import "./App.css";
@@ -95,7 +96,7 @@ const bandsByDay = bands.reduce((acc, band) => {
 
 Object.keys(DAYS).map((day) => {
   bandsByDay[DAYS[day]].sort(
-    (a, b) => new Date(a.time[0]) - new Date(b.time[0])
+    (a, b) => moment(a.time[0]).valueOf() - moment(b.time[0]).valueOf()
   );
 });
 
