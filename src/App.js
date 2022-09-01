@@ -100,6 +100,8 @@ Object.keys(DAYS).map((day) => {
 });
 
 export default function App() {
+  const isInIframe = window.self !== window.top;
+
   return (
     <div className={styles}>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -110,10 +112,12 @@ export default function App() {
       ></link>
 
       <HashRouter>
-        <nav className="site-nav">
-          <Link to="/">Home | </Link>
-          <Link to="/schedule/friday">Schedule</Link>
-        </nav>
+        {!isInIframe && (
+          <nav className="site-nav">
+            <Link to="/">Home | </Link>
+            <Link to="/schedule/friday">Schedule</Link>
+          </nav>
+        )}
         <Routes>
           <Route
             path="/"

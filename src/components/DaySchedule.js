@@ -50,13 +50,13 @@ const scheduleStyles = css`
 
     .stage-header-grid-inner {
       column-gap: var(--column-gap);
-      display: grid;
       grid-template-columns: 10px repeat(3, 1fr) 10px; //3 locations
       margin: 0 auto;
     }
 
     @media (min-width: 768px) {
       .stage-header-grid-inner {
+        display: grid;
         width: 80%;
       }
     }
@@ -69,6 +69,7 @@ const scheduleStyles = css`
       font-size: 14px;
       font-weight: bold;
       justify-content: center;
+      margin-bottom: 6px;
       opacity: 0.5;
       padding: 5px;
       text-align: center;
@@ -129,7 +130,7 @@ const scheduleStyles = css`
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 10px 16px 10px;
     text-align: left;
     transition: all 200ms ease-in;
     z-index: 5;
@@ -155,6 +156,7 @@ const scheduleStyles = css`
 
     &.album-play {
       border-right: 6px solid var(--album-play-color);
+      padding-right: 10px;
     }
 
     &.user-selected {
@@ -169,7 +171,7 @@ const scheduleStyles = css`
     }
 
     h3 {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       font-weight: 900;
       margin: 0 0 2px;
       text-transform: uppercase;
@@ -227,12 +229,13 @@ function getGridPosition(time) {
 }
 
 function getParsedTime(time) {
-  return time.map((part) =>
-    new Date(part).toLocaleTimeString([], {
+  return time.map((part) => {
+    const d = new Date(part).toLocaleTimeString([], {
       hour: "numeric",
       minute: "2-digit",
-    })
-  );
+    });
+    return d.split(" ")[0];
+  });
 }
 
 export default function DaySchedule({ bandsByDay }) {

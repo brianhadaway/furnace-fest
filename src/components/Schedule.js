@@ -4,7 +4,7 @@ import { Link, Outlet, useParams } from "react-router-dom";
 import { DAYS } from "../App";
 
 const scheduleStyles = css`
-  padding: 10px;
+  padding: 8px;
 
   .day-nav {
     background: #222;
