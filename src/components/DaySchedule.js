@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar, faHeart } from "@fortawesome/free-regular-svg-icons";
 import exportAsImage from "../utils/exportAsImage";
+import checkForConflicts from "../utils/checkForConflicts";
 
 const scheduleStyles = css`
   --border-radius: 6px;
@@ -59,8 +60,13 @@ const scheduleStyles = css`
 
     .stage-header-grid-inner {
       column-gap: var(--column-gap);
+      display: none;
       grid-template-columns: 10px repeat(3, 1fr) 10px; //3 locations
       margin: 0 auto;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
     }
 
     @media (min-width: 768px) {
@@ -118,7 +124,7 @@ const scheduleStyles = css`
       grid-template-columns: 10px repeat(3, 1fr) 10px; //3 locations
       grid-template-rows: repeat(
         144,
-        12px
+        20px
       ); //12 hours consisting of 12 5-minute blocks
       margin: 0 auto;
       row-gap: 0;
@@ -134,6 +140,7 @@ const scheduleStyles = css`
     --text-color: white;
     background: var(--item-color);
     border-radius: var(--border-radius);
+    border: 2px solid var(--item-color);
     color: var(--text-color);
     display: flex;
     flex-direction: row;
@@ -142,7 +149,7 @@ const scheduleStyles = css`
     padding: 10px 16px 10px;
     text-align: left;
     transition: all 200ms ease-in;
-    z-index: 500;
+    z-index: 5;
 
     @media (min-width: 768px) {
       margin-bottom: 0;
@@ -177,6 +184,10 @@ const scheduleStyles = css`
           var(--item-color) 40px
         ),
         var(--item-color);
+
+      &.has-conflict {
+        border: 2px solid red;
+      }
     }
 
     h3 {
@@ -221,6 +232,11 @@ const scheduleStyles = css`
 
   .userScheduleToggle {
     margin: 10px 0 0;
+  }
+
+  .conflicts-wrapper {
+    color: white;
+    font-size: 0.8rem;
   }
 `;
 
@@ -278,6 +294,8 @@ export default function DaySchedule({ bandsByDay }) {
     }, {})
   );
 
+  const [highlightConflicts, setHighlightConflicts] = useState(false);
+
   const [userSchedule, setUserSchedule] = useState(() => {
     const saved = localStorage.getItem("userSchedule");
     const initialValue = JSON.parse(saved);
@@ -292,6 +310,7 @@ export default function DaySchedule({ bandsByDay }) {
   };
 
   const [showUserSchedule, setShowUserSchedule] = useState(false);
+  const [userScheduleConflicts, setUserScheduleConflicts] = useState({});
 
   const exportRef = useRef();
 
@@ -299,8 +318,18 @@ export default function DaySchedule({ bandsByDay }) {
     localStorage.setItem("userSchedule", JSON.stringify(userSchedule));
   }, [userSchedule]);
 
+  useEffect(() => {
+    if (highlightConflicts) {
+      setUserScheduleConflicts(
+        checkForConflicts(bandsByDay[day], userSchedule)
+      );
+    } else {
+      setUserScheduleConflicts({});
+    }
+  }, [userSchedule, day, highlightConflicts]);
+
   return (
-    <div className={scheduleStyles} ref={exportRef}>
+    <div className={scheduleStyles}>
       <div className="stage-header-grid">
         <div className="stage-header-grid-inner">
           {stages.map((stage, i) => {
@@ -329,12 +358,22 @@ export default function DaySchedule({ bandsByDay }) {
           ) : (
             <FontAwesomeIcon icon={faHeart} />
           )}
+          {showUserSchedule ? " Show All Bands" : " Show My Schedule"}
         </button>
         <button onClick={() => exportAsImage(exportRef.current, "FF Schedule")}>
           Download current view
         </button>
+        <div className="conflicts-wrapper">
+          <label>
+            <input
+              type="checkbox"
+              onChange={(e) => setHighlightConflicts(!highlightConflicts)}
+            />{" "}
+            Highlight Conflicts in My Schedule
+          </label>
+        </div>
       </div>
-      <div className="grid-container">
+      <div className="grid-container" ref={exportRef}>
         {hours.map((hour, i) => {
           const gridRowStart = i * 12 + 2;
           const gridRowEnd = gridRowStart + 6;
@@ -361,9 +400,12 @@ export default function DaySchedule({ bandsByDay }) {
           const userScheduleClass = isUserSelected ? "user-selected" : "";
           const albumPlayClass = show.albumPlay ? "album-play" : "";
           const showStage = stages[show.stageId];
+          const conflictClass = userScheduleConflicts[show.id]
+            ? "has-conflict"
+            : "";
           return (
             <div
-              className={`grid-item stage-${show.stageId} ${albumPlayClass} ${userScheduleClass}`}
+              className={`grid-item stage-${show.stageId} ${albumPlayClass} ${userScheduleClass} ${conflictClass}`}
               key={show.id}
               style={{
                 gridColumnStart: show.stageId + 2,
