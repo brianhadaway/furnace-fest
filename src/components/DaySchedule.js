@@ -1,7 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { css } from "@emotion/css";
 import moment from "moment";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHeartCirclePlus,
+  faHeartCircleXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faHeart } from "@fortawesome/free-regular-svg-icons";
+import exportAsImage from "../utils/exportAsImage";
 
 const scheduleStyles = css`
   --border-radius: 6px;
@@ -111,7 +118,7 @@ const scheduleStyles = css`
       grid-template-columns: 10px repeat(3, 1fr) 10px; //3 locations
       grid-template-rows: repeat(
         144,
-        10px
+        12px
       ); //12 hours consisting of 12 5-minute blocks
       margin: 0 auto;
       row-gap: 0;
@@ -135,7 +142,7 @@ const scheduleStyles = css`
     padding: 10px 16px 10px;
     text-align: left;
     transition: all 200ms ease-in;
-    z-index: 5;
+    z-index: 500;
 
     @media (min-width: 768px) {
       margin-bottom: 0;
@@ -198,9 +205,12 @@ const scheduleStyles = css`
 
     button {
       align-items: center;
+      background: none;
+      border: none;
+      color: var(--item-text-color);
       cursor: pointer;
       display: flex;
-      font-size: 16px;
+      font-size: 24px;
       font-weight: 900;
       height: 32px;
       justify-content: center;
@@ -254,9 +264,9 @@ export default function DaySchedule({ bandsByDay }) {
   ];
 
   const stages = [
-    "Baked Brothers Stage",
-    "Plug Your Holes Stage",
-    "Wheelhouse Stage",
+    { name: "Baked Brothers Stage", location: "Pond" },
+    { name: "Plug Your Holes Stage", location: "Shed" },
+    { name: "Wheelhouse Stage", location: "Main" },
   ];
 
   const [stageFilter, setStageFilter] = useState(
@@ -283,12 +293,14 @@ export default function DaySchedule({ bandsByDay }) {
 
   const [showUserSchedule, setShowUserSchedule] = useState(false);
 
+  const exportRef = useRef();
+
   useEffect(() => {
     localStorage.setItem("userSchedule", JSON.stringify(userSchedule));
   }, [userSchedule]);
 
   return (
-    <div className={scheduleStyles}>
+    <div className={scheduleStyles} ref={exportRef}>
       <div className="stage-header-grid">
         <div className="stage-header-grid-inner">
           {stages.map((stage, i) => {
@@ -302,7 +314,7 @@ export default function DaySchedule({ bandsByDay }) {
                   setStageFilter({ ...stageFilter, [i]: !stageFilter[i] })
                 }
               >
-                {stage}
+                {stage.name} ({stage.location})
               </div>
             );
           })}
@@ -310,8 +322,16 @@ export default function DaySchedule({ bandsByDay }) {
         <button
           className="userScheduleToggle"
           onClick={() => setShowUserSchedule(!showUserSchedule)}
+          title={showUserSchedule ? "Show All Bands" : "Show My Schedule"}
         >
-          {showUserSchedule ? "Show All Bands" : "Show My Schedule"}
+          {showUserSchedule ? (
+            <FontAwesomeIcon icon={faCalendar} />
+          ) : (
+            <FontAwesomeIcon icon={faHeart} />
+          )}
+        </button>
+        <button onClick={() => exportAsImage(exportRef.current, "FF Schedule")}>
+          Download current view
         </button>
       </div>
       <div className="grid-container">
@@ -340,6 +360,7 @@ export default function DaySchedule({ bandsByDay }) {
           const parsedTime = getParsedTime(show.time);
           const userScheduleClass = isUserSelected ? "user-selected" : "";
           const albumPlayClass = show.albumPlay ? "album-play" : "";
+          const showStage = stages[show.stageId];
           return (
             <div
               className={`grid-item stage-${show.stageId} ${albumPlayClass} ${userScheduleClass}`}
@@ -352,6 +373,9 @@ export default function DaySchedule({ bandsByDay }) {
             >
               <div className="show-info-wrapper">
                 <h3>{show.name.split(",").reverse().join(" ")}</h3>
+                <p>
+                  {showStage.name} ({showStage.location})
+                </p>
                 <p>
                   {parsedTime[0]} - {parsedTime[1]}
                 </p>
@@ -367,7 +391,11 @@ export default function DaySchedule({ bandsByDay }) {
                 } my schedule`}
                 onClick={() => onUserItemChange(show.id)}
               >
-                {isUserSelected ? "-" : "+"}
+                {isUserSelected ? (
+                  <FontAwesomeIcon icon={faHeartCircleXmark} />
+                ) : (
+                  <FontAwesomeIcon icon={faHeartCirclePlus} />
+                )}
               </button>
             </div>
           );
