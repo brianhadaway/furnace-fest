@@ -138,8 +138,7 @@ export default function App() {
       <footer>
         <a href="https://www.furnacefest.us/">FurnaceFest.us</a>
         <div>
-          Built for the Furnace Fest Community by{" "}
-          <a href="mailto:brianhadaway@gmail.com">Brian Hadaway</a>
+          ©2022 <a href="mailto:brianhadaway@gmail.com">Brian Hadaway</a>
         </div>
         <a href="https://instagram.com/furnacefest">@FurnaceFest</a>
       </footer>

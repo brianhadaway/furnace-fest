@@ -4,8 +4,10 @@ import { css } from "@emotion/css";
 import moment from "moment";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHeartCirclePlus,
-  faHeartCircleXmark,
+  faCirclePlus,
+  faCircle,
+  faCircleXmark,
+  faCloudArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar, faHeart } from "@fortawesome/free-regular-svg-icons";
 import exportAsImage from "../utils/exportAsImage";
@@ -19,7 +21,7 @@ const scheduleStyles = css`
   --stage0text: white;
   --stage1text: white;
   --stage2text: black;
-  --column-gap: 40px;
+  --column-gap: 20px;
   --album-play-color: dodgerblue;
   --user-color: orange;
 
@@ -59,19 +61,16 @@ const scheduleStyles = css`
     z-index: 10;
 
     .stage-header-grid-inner {
-      column-gap: var(--column-gap);
-      display: none;
-      grid-template-columns: 10px repeat(3, 1fr) 10px; //3 locations
+      display: flex;
+      justify-content: space-around;
       margin: 0 auto;
-
-      @media (min-width: 768px) {
-        display: block;
-      }
     }
 
     @media (min-width: 768px) {
       .stage-header-grid-inner {
+        column-gap: var(--column-gap);
         display: grid;
+        grid-template-columns: 10px repeat(3, 1fr) 10px; //3 locations
         width: 80%;
       }
     }
@@ -81,7 +80,7 @@ const scheduleStyles = css`
       border-radius: var(--border-radius);
       cursor: pointer;
       display: flex;
-      font-size: 14px;
+      font-size: 10px;
       font-weight: bold;
       justify-content: center;
       margin-bottom: 6px;
@@ -92,6 +91,10 @@ const scheduleStyles = css`
 
       &.stage-active {
         opacity: 1;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 12px;
       }
     }
 
@@ -124,7 +127,7 @@ const scheduleStyles = css`
       grid-template-columns: 10px repeat(3, 1fr) 10px; //3 locations
       grid-template-rows: repeat(
         144,
-        20px
+        15px
       ); //12 hours consisting of 12 5-minute blocks
       margin: 0 auto;
       row-gap: 0;
@@ -138,6 +141,8 @@ const scheduleStyles = css`
   .grid-item {
     --item-color: gray;
     --text-color: white;
+    --text-shadow: black;
+    --box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
     background: var(--item-color);
     border-radius: var(--border-radius);
     border: 2px solid var(--item-color);
@@ -146,7 +151,8 @@ const scheduleStyles = css`
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
-    padding: 10px 16px 10px;
+    padding: 6px 6px 2px 6px;
+    position: relative;
     text-align: left;
     transition: all 200ms ease-in;
     z-index: 5;
@@ -168,6 +174,7 @@ const scheduleStyles = css`
     &.stage-2 {
       --item-color: var(--stage2color);
       --text-color: var(--stage2text);
+      --text-shadow: white;
     }
 
     &.album-play {
@@ -184,10 +191,19 @@ const scheduleStyles = css`
           var(--item-color) 40px
         ),
         var(--item-color);
+      position: relative;
 
       &.has-conflict {
         border: 2px solid red;
       }
+    }
+
+    .show-info-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      text-shadow: 0 0 2px var(--text-shadow);
+      z-index: 2;
     }
 
     h3 {
@@ -227,6 +243,13 @@ const scheduleStyles = css`
       justify-content: center;
       padding: 0;
       width: 32px;
+
+      &.remove {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+      }
     }
   }
 
@@ -237,6 +260,24 @@ const scheduleStyles = css`
   .conflicts-wrapper {
     color: white;
     font-size: 0.8rem;
+    margin-top: 4px;
+  }
+
+  .date-pill {
+    cursor: pointer;
+    font-size: 10px;
+
+    @media (min-width: 768px) {
+      font-size: 12px;
+    }
+
+    & + .date-pill {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      background: white;
+    }
   }
 `;
 
@@ -336,6 +377,7 @@ export default function DaySchedule({ bandsByDay }) {
             return (
               <div
                 key={`stage-${i}`}
+                title={`Toggle ${stage.name} Schedule`}
                 className={`stage-header stage-${i} ${
                   stageFilter[i] ? "stage-active" : ""
                 }`}
@@ -348,21 +390,27 @@ export default function DaySchedule({ bandsByDay }) {
             );
           })}
         </div>
-        <button
-          className="userScheduleToggle"
+        <div
+          className="userScheduleToggle date-pill"
           onClick={() => setShowUserSchedule(!showUserSchedule)}
-          title={showUserSchedule ? "Show All Bands" : "Show My Schedule"}
+          title={showUserSchedule ? "Show Full Schedule" : "Show My Schedule"}
         >
           {showUserSchedule ? (
             <FontAwesomeIcon icon={faCalendar} />
           ) : (
             <FontAwesomeIcon icon={faHeart} />
           )}
-          {showUserSchedule ? " Show All Bands" : " Show My Schedule"}
-        </button>
-        <button onClick={() => exportAsImage(exportRef.current, "FF Schedule")}>
-          Download current view
-        </button>
+          {showUserSchedule ? " Show Full Schedule" : " Show My Schedule"}
+        </div>
+        <div
+          className="date-pill"
+          title="Download current schedule view"
+          onClick={() =>
+            exportAsImage(exportRef.current, `Furnace Fest Schedule - ${day}`)
+          }
+        >
+          <FontAwesomeIcon icon={faCloudArrowDown} /> Download current view
+        </div>
         <div className="conflicts-wrapper">
           <label>
             <input
@@ -415,9 +463,7 @@ export default function DaySchedule({ bandsByDay }) {
             >
               <div className="show-info-wrapper">
                 <h3>{show.name.split(",").reverse().join(" ")}</h3>
-                <p>
-                  {showStage.name} ({showStage.location})
-                </p>
+                <p>{showStage.name}</p>
                 <p>
                   {parsedTime[0]} - {parsedTime[1]}
                 </p>
@@ -428,15 +474,16 @@ export default function DaySchedule({ bandsByDay }) {
 
               <button
                 type="button"
+                className="remove"
                 title={`${
                   isUserSelected ? "Remove from" : "Add to"
                 } my schedule`}
                 onClick={() => onUserItemChange(show.id)}
               >
                 {isUserSelected ? (
-                  <FontAwesomeIcon icon={faHeartCircleXmark} />
+                  <FontAwesomeIcon icon={faCircleXmark} />
                 ) : (
-                  <FontAwesomeIcon icon={faHeartCirclePlus} />
+                  <FontAwesomeIcon icon={faCirclePlus} />
                 )}
               </button>
             </div>
