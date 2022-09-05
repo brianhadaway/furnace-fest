@@ -113,14 +113,6 @@
           "id": 15,
           "tier": 3 },
         {
-          "name": "Crossfaith",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 23",
-          "stageId": 2,
-          "time":  ["2022-09-23 12:10:00","2022-09-23 12:40:00"],
-          "id": 16,
-          "tier": 3 },
-        {
           "name": "Darling Fire, The",
           "date": "friday",
           "dateDisplay": "Friday Sep 23",
@@ -239,6 +231,14 @@
           "stageId": 2,
           "time":  ["2022-09-23 17:20:00","2022-09-23 18:15:00"],
           "id": 59,
+          "tier": 3 },
+        {
+          "name": "One Step Closer",
+          "date": "friday",
+          "dateDisplay": "Friday Sep 23",
+          "stageId": 2,
+          "time":  ["2022-09-23 12:10:00","2022-09-23 12:40:00"],
+          "id": 16,
           "tier": 3 },
         {
           "name": "Open Hand",

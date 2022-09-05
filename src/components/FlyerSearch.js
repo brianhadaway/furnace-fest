@@ -40,7 +40,7 @@ export default function FlyerSearch({ bands, bandsByDay }) {
         <h5>the unofficial</h5>
         <h1>Furnace Fest</h1>
 
-        <h5>band search</h5>
+        <h5>lineup & schedule</h5>
         <Search
           items={bands}
           handleOnSearch={handleOnSearch}
