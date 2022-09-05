@@ -5,13 +5,13 @@ import moment from "moment";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCirclePlus,
-  faCircle,
   faCircleXmark,
   faCloudArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar, faHeart } from "@fortawesome/free-regular-svg-icons";
 import exportAsImage from "../utils/exportAsImage";
 import checkForConflicts from "../utils/checkForConflicts";
+import { stages } from "../utils/constants";
 
 const scheduleStyles = css`
   --border-radius: 6px;
@@ -320,12 +320,6 @@ export default function DaySchedule({ bandsByDay }) {
     "11:00",
   ];
 
-  const stages = [
-    { name: "Baked Brothers Stage", location: "Pond" },
-    { name: "Plug Your Holes Stage", location: "Shed" },
-    { name: "Wheelhouse Stage", location: "Main" },
-  ];
-
   const [stageFilter, setStageFilter] = useState(
     stages.reduce((acc, stage, i) => {
       return {
@@ -367,7 +361,7 @@ export default function DaySchedule({ bandsByDay }) {
     } else {
       setUserScheduleConflicts({});
     }
-  }, [userSchedule, day, highlightConflicts]);
+  }, [userSchedule, day, highlightConflicts, bandsByDay]);
 
   return (
     <div className={scheduleStyles}>
@@ -441,7 +435,7 @@ export default function DaySchedule({ bandsByDay }) {
             !stageFilter[show.stageId] ||
             (showUserSchedule && !isUserSelected)
           ) {
-            return;
+            return null;
           }
           const [gridRowStart, gridRowEnd] = getGridPosition(show.time);
           const parsedTime = getParsedTime(show.time);

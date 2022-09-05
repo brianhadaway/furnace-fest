@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/css";
 import moment from "moment";
+import { stages } from "../utils/constants";
 
 const styles = css`
   background-color: #15aad4;
@@ -28,12 +29,6 @@ const styles = css`
 `;
 
 export default function BandDetails({ band, handleOnClose }) {
-  const stages = [
-    "Baked Brothers Stage",
-    "Plug Your Holes Stage",
-    "Wheelhouse Stage",
-  ];
-
   const [startTime, endTime] = band.time;
   return (
     <div className={styles}>
@@ -53,7 +48,9 @@ export default function BandDetails({ band, handleOnClose }) {
         {`Playing on ${band.dateDisplay} from ${moment(startTime).format(
           "LT"
         )} to
-        ${moment(endTime).format("LT")} on the ${stages[band.stageId]}`}
+        ${moment(endTime).format("LT")} on the ${stages[band.stageId].name} (${
+          stages[band.stageId].location
+        })`}
       </p>
     </div>
   );
