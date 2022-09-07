@@ -96,7 +96,7 @@ const bandsByDay = bands.reduce((acc, band) => {
 }, {});
 
 Object.keys(DAYS).map((day) => {
-  bandsByDay[DAYS[day]].sort(
+  return bandsByDay[DAYS[day]].sort(
     (a, b) => moment(a.time[0]).valueOf() - moment(b.time[0]).valueOf()
   );
 });
@@ -107,7 +107,7 @@ export default function App() {
   return (
     <div className={styles}>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700;8..144,1000&display=swap"
         rel="stylesheet"
