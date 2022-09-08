@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import mixpanel from "mixpanel-browser";
 
 import Search from "./Search";
 import BandList from "./BandList";
@@ -12,17 +13,18 @@ export default function FlyerSearch({ bands, bandsByDay }) {
   const handleOnSearch = (string, results) => {
     // onSearch will have as the first callback parameter
     // the string searched and for the second the results.
-    console.log(string, results);
     const bandState = results.reduce((acc, band) => {
       acc[band.id] = true;
       return acc;
     }, {});
 
+    mixpanel.track('Search', {'input': string});
+
     setSelectedBands(bandState);
   };
 
   const handleOnSelect = (band) => {
-    console.log(band);
+    mixpanel.track('Search Select', {'input': band.name});
     setSelectedBands({
       [band.id]: true,
     });

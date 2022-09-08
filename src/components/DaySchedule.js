@@ -9,6 +9,8 @@ import {
   faCloudArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar, faHeart } from "@fortawesome/free-regular-svg-icons";
+import mixpanel from "mixpanel-browser";
+
 import exportAsImage from "../utils/exportAsImage";
 import checkForConflicts from "../utils/checkForConflicts";
 import { stages } from "../utils/constants";
@@ -375,9 +377,10 @@ export default function DaySchedule({ bandsByDay }) {
                 className={`stage-header stage-${i} ${
                   stageFilter[i] ? "stage-active" : ""
                 }`}
-                onClick={() =>
+                onClick={() =>{
+                  mixpanel.track('Filter Stage', {'stage': stage.name})
                   setStageFilter({ ...stageFilter, [i]: !stageFilter[i] })
-                }
+                }}
               >
                 {stage.name} ({stage.location})
               </div>
@@ -386,7 +389,10 @@ export default function DaySchedule({ bandsByDay }) {
         </div>
         <div
           className="userScheduleToggle date-pill"
-          onClick={() => setShowUserSchedule(!showUserSchedule)}
+          onClick={() => {
+            mixpanel.track('Toggle User Schedule');
+            setShowUserSchedule(!showUserSchedule);
+          }}
           title={showUserSchedule ? "Show Full Schedule" : "Show My Schedule"}
         >
           {showUserSchedule ? (
@@ -409,7 +415,10 @@ export default function DaySchedule({ bandsByDay }) {
           <label>
             <input
               type="checkbox"
-              onChange={(e) => setHighlightConflicts(!highlightConflicts)}
+              onChange={() => {
+                mixpanel.track('Toggle Highlight Conflicts');
+                setHighlightConflicts(!highlightConflicts)
+              }}
             />{" "}
             Highlight Conflicts in My Schedule
           </label>

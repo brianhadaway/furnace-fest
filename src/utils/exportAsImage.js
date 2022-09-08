@@ -1,11 +1,12 @@
 import html2canvas from "html2canvas";
+import mixpanel from "mixpanel-browser";
 
 const exportAsImage = async (element, imageFileName) => {
   const html = document.getElementsByTagName("html")[0];
   const body = document.getElementsByTagName("body")[0];
   let htmlWidth = html.clientWidth;
   let bodyWidth = body.clientWidth;
-
+  
   const newWidth = element.scrollWidth - element.clientWidth;
 
   if (newWidth > element.clientWidth) {
@@ -21,6 +22,8 @@ const exportAsImage = async (element, imageFileName) => {
   downloadImage(image, imageFileName);
   html.style.width = null;
   body.style.width = null;
+
+  mixpanel.track('Download Schedule', {'filename': imageFileName});
 };
 
 const downloadImage = (blob, fileName) => {

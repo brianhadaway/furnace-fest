@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { css } from "@emotion/css";
-import { Link } from "react-router-dom";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
 import moment from "moment";
+import mixpanel from "mixpanel-browser";
 
 import bands from "./data/bands.json";
 import "./App.css";
@@ -16,6 +16,8 @@ export const DAYS = Object.freeze({
   SAT: "saturday",
   SUN: "sunday",
 });
+
+const MIXPANEL_TOKEN = "3faf17b2a8fcd5797d67112ca865714e";
 
 const styles = css`
   * {
@@ -101,9 +103,24 @@ Object.keys(DAYS).map((day) => {
   );
 });
 
+mixpanel.init(MIXPANEL_TOKEN);
+
 export default function App() {
   const isInIframe = window.self !== window.top;
+  const location = useLocation();
+  const [currentLocation, setCurrentLocation] = useState(() => {
+    const {pathname} = location;
+    mixpanel.track('Page Load', {pathname});
+    return location.pathname;
+  });
 
+  useEffect(() => {
+    const {pathname} = location;
+    if(currentLocation !== pathname){
+      setCurrentLocation(pathname);
+      mixpanel.track('Page Load', {pathname});
+    }
+  }, [location, currentLocation])
   return (
     <div className={styles}>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -113,7 +130,6 @@ export default function App() {
         rel="stylesheet"
       ></link>
 
-      <HashRouter>
         {!isInIframe && (
           <nav className="site-nav">
             <Link to="/">Home | </Link>
@@ -134,7 +150,6 @@ export default function App() {
             />
           </Route>
         </Routes>
-      </HashRouter>
       <footer>
         <a href="https://www.furnacefest.us/">FurnaceFest.us</a>
         <div>
