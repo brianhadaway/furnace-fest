@@ -1,7 +1,7 @@
 import html2canvas from "html2canvas";
 import mixpanel from "mixpanel-browser";
 
-const exportAsImage = async (element, fileName) => {
+const exportAsImage = async (element, imageFileName) => {
   const html = document.getElementsByTagName("html")[0];
   const body = document.getElementsByTagName("body")[0];
   let htmlWidth = html.clientWidth;
@@ -18,12 +18,26 @@ const exportAsImage = async (element, fileName) => {
   body.style.width = bodyWidth + "px";
 
   const canvas = await html2canvas(element);
-  const blob = canvas.toDataURL("image/png", 1.0);
-  //downloadImage(image, imageFileName);
-  mixpanel.track('Download Schedule', {'filename': fileName});
+  const image = canvas.toDataURL("image/png", 1.0);
+  downloadImage(image, imageFileName);
   html.style.width = null;
   body.style.width = null;
-  return {blob, fileName};
+
+  mixpanel.track('Download Schedule', {'filename': imageFileName});
+};
+
+const downloadImage = (blob, fileName) => {
+  const fakeLink = window.document.createElement("a");
+  fakeLink.style = "display:none;";
+  fakeLink.download = fileName;
+
+  fakeLink.href = blob;
+
+  document.body.appendChild(fakeLink);
+  fakeLink.click();
+  document.body.removeChild(fakeLink);
+
+  fakeLink.remove();
 };
 
 export default exportAsImage;
