@@ -365,6 +365,13 @@ export default function DaySchedule({ bandsByDay }) {
     }
   }, [userSchedule, day, highlightConflicts, bandsByDay]);
 
+  const [image, setImage] = useState(null);
+
+  async function exportHandler(ref, day){
+    const {blob, fileName} = await exportAsImage(ref, `Furnace Fest Schedule - ${day}`);
+    setImage({blob, fileName});
+  }
+
   return (
     <div className={scheduleStyles}>
       <div className="stage-header-grid">
@@ -406,11 +413,12 @@ export default function DaySchedule({ bandsByDay }) {
           className="date-pill"
           title="Download current schedule view"
           onClick={() =>
-            exportAsImage(exportRef.current, `Furnace Fest Schedule - ${day}`)
+            exportHandler(exportRef.current, day)
           }
         >
           <FontAwesomeIcon icon={faCloudArrowDown} /> Download current view
         </div>
+        {image && <div><a href={image.blob} download={image.fileName} >Image generated. Click here to download.</a></div>}
         <div className="conflicts-wrapper">
           <label>
             <input
