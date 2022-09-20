@@ -306,6 +306,7 @@ function getParsedTime(time) {
 }
 
 export default function DaySchedule({ bandsByDay }) {
+  const isInIframe = window.self !== window.top;
   const { day } = useParams();
   const hours = [
     "12:00",
@@ -348,6 +349,7 @@ export default function DaySchedule({ bandsByDay }) {
 
   const [showUserSchedule, setShowUserSchedule] = useState(false);
   const [userScheduleConflicts, setUserScheduleConflicts] = useState({});
+  const [downloadAttempted, setDownloadAttempted] = useState(false);
 
   const exportRef = useRef();
 
@@ -405,13 +407,16 @@ export default function DaySchedule({ bandsByDay }) {
         <div
           className="date-pill"
           title="Download current schedule view"
-          onClick={() =>
-            exportAsImage(exportRef.current, `Furnace Fest Schedule - ${day}`)
+          onClick={() =>{
+            exportAsImage(exportRef.current, `Furnace Fest Schedule - ${day}`);
+            setDownloadAttempted(true);
+          }
           }
         >
           <FontAwesomeIcon icon={faCloudArrowDown} /> Download current view
         </div>
         <div className="conflicts-wrapper">
+          {isInIframe && downloadAttempted && <div>If your image didn't download, <a href={`https://brianhadaway.github.io/furnace-fest/#/schedule/${day}`} target="_blank" rel="noreferrer">click here</a> and try again.</div>}
           <label>
             <input
               type="checkbox"
