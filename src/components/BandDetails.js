@@ -4,8 +4,9 @@ import moment from "moment";
 import { stages } from "../utils/constants";
 
 const styles = css`
-  background-color: #15aad4;
-  color: white;
+  background-color: black;
+  color: var(--theme-color);
+  margin: 0 8px 8px;
   padding: 25px 0;
   position: relative;
   z-index: 1;
@@ -17,14 +18,14 @@ const styles = css`
   }
 
   button {
-    background: transparent;
+    background: var(--theme-color);
     border: none;
     cursor: pointer;
-    height: 50px;
+    height: 40px;
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 50px;
+    right: 5px;
+    top: 5px;
+    width: 40px;
   }
 `;
 
@@ -45,12 +46,13 @@ export default function BandDetails({ band, handleOnClose }) {
       </button>
       <h2>{band.name.split(",").reverse().join(" ")}</h2>
       <p>
-        {`Playing on ${band.dateDisplay} from ${moment(startTime).format(
+        {/* {`Playing on ${band.dateDisplay} from ${moment(startTime).format(
           "LT"
         )} to
         ${moment(endTime).format("LT")} on the ${stages[band.stageId].name} (${
           stages[band.stageId].location
-        })`}
+        })`} */}
+        {`Playing on ${band.dateDisplay} (time and stage TBA)`}
       </p>
     </div>
   );

@@ -11,6 +11,10 @@ import FlyerSearch from "./components/FlyerSearch";
 import Schedule from "./components/Schedule";
 import DaySchedule from "./components/DaySchedule";
 
+import texture from './assets/wrinkle.png';
+
+const navEnabled = false;
+
 export const DAYS = Object.freeze({
   FRI: "friday",
   SAT: "saturday",
@@ -19,14 +23,42 @@ export const DAYS = Object.freeze({
 
 const MIXPANEL_TOKEN = "3faf17b2a8fcd5797d67112ca865714e";
 
+const THEME_COLORS = ["#aecd81", "#e99b60", "#dba1be", "#c4c4c4", "#e9dd69", "#a6d0cf"];
+const COLOR_INDEX = Math.floor(Math.random() * THEME_COLORS.length);
+
 const styles = css`
+  --theme-color: ${THEME_COLORS[COLOR_INDEX]};
+
   * {
     box-sizing: border-box;
   }
 
+  header {
+    background-color: var(--theme-color);
+    background-image: url(${texture});
+    background-size: cover;
+    border-bottom: 8px solid black;
+    padding-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-weight: 1000;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  h5 {
+    margin: 0;
+  }
+
   .site-nav {
-    background: white;
-    border-bottom: 8px solid #15aad4;
+    background: black;
+    border-bottom: 8px solid black;
     color: black;
     padding: 10px;
 
@@ -37,20 +69,17 @@ const styles = css`
   }
 
   .date-pill {
-    background: #8e8e8e;
-    border-radius: 1rem;
-    color: #181818;
-    display: inline-block;
-    font-size: 0.75rem;
+    background: black;
+    color: var(--theme-color);
     font-weight: 700;
-    padding: 4px 8px;
+    height: 32px;
+    line-height: 32px;
     text-transform: uppercase;
   }
 
   footer {
     align-items: center;
-    background-color: #222;
-    color: #8e8e8e;
+    color: var(--theme-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,7 +94,7 @@ const styles = css`
   }
 
   a {
-    color: #8e8e8e;
+    color: var(--theme-color);
   }
 `;
 
@@ -130,7 +159,7 @@ export default function App() {
         rel="stylesheet"
       ></link>
 
-        {!isInIframe && (
+        {!isInIframe && navEnabled && (
           <nav className="site-nav">
             <Link to="/">Home | </Link>
             <Link to="/schedule/friday">Schedule</Link>
@@ -153,7 +182,7 @@ export default function App() {
       <footer>
         <a href="https://www.furnacefest.us/">FurnaceFest.us</a>
         <div>
-          ©2022 <a href="mailto:brianhadaway@gmail.com">Brian Hadaway</a>
+          ©2023 <a href="mailto:brianhadaway@gmail.com">Brian Hadaway</a>
         </div>
         <a href="https://instagram.com/furnacefest">@FurnaceFest</a>
       </footer>

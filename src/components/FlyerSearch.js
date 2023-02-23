@@ -1,9 +1,20 @@
 import React, { useState } from "react";
 import mixpanel from "mixpanel-browser";
+import {css} from '@emotion/css';
 
 import Search from "./Search";
 import BandList from "./BandList";
 import BandDetails from "./BandDetails";
+import texture from '../assets/wrinkle.png';
+
+const styles = css`
+  background-color: var(--theme-color);
+  background-image: url(${texture});
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 0 16px;
+`
 
 export default function FlyerSearch({ bands, bandsByDay }) {
   const [selectedBands, setSelectedBands] = useState({});
@@ -37,7 +48,7 @@ export default function FlyerSearch({ bands, bandsByDay }) {
   };
 
   return (
-    <div>
+    <div className={styles}>
       <header>
         <h5>the unofficial</h5>
         <h1>Furnace Fest</h1>

@@ -1,18 +1,17 @@
 import React from "react";
 import { css } from "@emotion/css";
 import { DAYS } from "../App";
+import { stages } from "../utils/constants";
 
 const styles = css`
   align-items: center;
-  background-color: #000000;
-  color: #8e8e8e;
   display: flex;
   flex-direction: column;
+  padding: 0 16px 16px;
 
   .day {
-    background-color: #181818;
     max-width: 1024px;
-    padding-top: 30px;
+    padding-top: 16px;
     width: 100%;
 
     @media (min-width: 720px) {
@@ -26,9 +25,14 @@ const styles = css`
     flex-direction: column;
     justify-content: center;
     list-style: none;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
     padding: 0;
+
+    &.tier-1 {
+      margin-bottom: 4px;
+      margin-top: 4px;
+    }
 
     @media (min-width: 720px) {
       flex-direction: row;
@@ -39,48 +43,57 @@ const styles = css`
       }
     }
 
-    &.tier-3 {
-      border-bottom: 1px dashed #8e8e8e;
-      padding-bottom: 40px;
+    &.tier-2 {
+      background: black;
+      margin-bottom: 16px;
+      min-height: 56px;
     }
   }
 
   .band {
+    color: black;
     cursor: pointer;
     padding: 5px;
     text-transform: uppercase;
 
     &.tier-1 {
-      color: white;
-      font-size: 2rem;
-      font-weight: 1000;
+      font-size: 3rem;
+      letter-spacing: -0.05em;
+      min-height: 3rem;
+      line-height: 3rem;
+
       margin-left: 2rem;
       margin-right: 2rem;
     }
 
     &.tier-2 {
-      font-size: 1.5rem;
-      font-weight: 1000;
-      padding: 5px 15px;
+      background: black;
+      color: var(--theme-color);
+      font-size: 1.75rem;
+      padding: 4px 16px;
     }
 
     &.tier-3 {
-      font-size: 1rem;
-      padding: 5px 12px;
+      font-size: 1.25rem;
+      font-variation-settings: 'wght' 850, 'wdth' 30, 'slnt' 0;
+      letter-spacing: -0.04em;
+      padding: 4px 12px;
     }
 
     &.selected,
     &:hover {
-      color: #15aad4;
+      background: black;
+      color: var(--theme-color);
+      text-decoration: underline;
     }
   }
 `;
 
 export default function BandList({ bands, selectedBands, onClick }) {
   const dates = [
-    { key: DAYS.FRI, display: "Friday Sep 23" },
-    { key: DAYS.SAT, display: "Saturday Sep 24" },
-    { key: DAYS.SUN, display: "Sunday Sep 25" },
+    { key: DAYS.FRI, display: "Friday" },
+    { key: DAYS.SAT, display: "Saturday" },
+    { key: DAYS.SUN, display: "Sunday" },
   ];
   const tiers = [1, 2, 3];
   return (
@@ -93,12 +106,12 @@ export default function BandList({ bands, selectedBands, onClick }) {
               return (
                 <ul key={`${date.key}-${tier}`} className={`tier-${tier}`}>
                   {bands[date.key][tier].map((band) => {
-                    const { id, name, stage, tier, time } = band;
+                    const { id, name, stageId, tier, time } = band;
                     return (
                       <li
                         key={id}
                         onClick={() => onClick(band)}
-                        title={`${stage} stage @ ${time}`}
+                        // title={`${stages[stageId].location} Stage @ ${time}`}
                         className={`band tier-${tier} ${
                           selectedBands[id] ? "selected" : ""
                         }`}

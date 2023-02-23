@@ -46,6 +46,7 @@ export default function Search({
         onHover={handleOnHover}
         onSelect={handleOnSelect}
         onFocus={handleOnFocus}
+        placeholder="Enter a band..."
         //autoFocus
         formatResult={formatResult}
         fuseOptions={{ threshold: 0.3 }}
