@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/furnace-fest/static/css/main.63f07cad.css",
-    "main.js": "/furnace-fest/static/js/main.b512a637.js",
+    "main.css": "/furnace-fest/static/css/main.b6aecf79.css",
+    "main.js": "/furnace-fest/static/js/main.3c88a4d4.js",
     "static/js/787.7065bced.chunk.js": "/furnace-fest/static/js/787.7065bced.chunk.js",
     "static/media/wrinkle.png": "/furnace-fest/static/media/wrinkle.f07e2a938d4855a5a482.png",
     "static/media/rough.png": "/furnace-fest/static/media/rough.b18a6e5e91c7117db492.png",
     "index.html": "/furnace-fest/index.html",
-    "main.63f07cad.css.map": "/furnace-fest/static/css/main.63f07cad.css.map",
-    "main.b512a637.js.map": "/furnace-fest/static/js/main.b512a637.js.map",
+    "main.b6aecf79.css.map": "/furnace-fest/static/css/main.b6aecf79.css.map",
+    "main.3c88a4d4.js.map": "/furnace-fest/static/js/main.3c88a4d4.js.map",
     "787.7065bced.chunk.js.map": "/furnace-fest/static/js/787.7065bced.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63f07cad.css",
-    "static/js/main.b512a637.js"
+    "static/css/main.b6aecf79.css",
+    "static/js/main.3c88a4d4.js"
   ]
 }
