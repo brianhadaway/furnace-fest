@@ -13,7 +13,6 @@ const styles = css`
   background-size: cover;
   margin: 0 auto;
   max-width: 1024px;
-  overflow: hidden;
   padding: 0 0 16px;
   position: relative;
 `

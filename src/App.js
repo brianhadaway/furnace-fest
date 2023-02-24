@@ -40,6 +40,7 @@ const styles = css`
     background-image: url(${texture});
     background-size: cover;
     border-bottom: 8px solid #2e2e2e;
+    border-top: 8px solid #2e2e2e;
     padding-top: 8px;
     position: sticky;
     top: 0;

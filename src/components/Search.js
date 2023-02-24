@@ -5,7 +5,7 @@ import { css } from "@emotion/css";
 
 const styles = css`
   margin: 20px auto;
-  width: 375px;
+  width: 360px;
   z-index: 10;
 
   @media (min-width: 400px) {

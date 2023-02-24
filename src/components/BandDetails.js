@@ -8,19 +8,28 @@ const styles = visible => css`
   color: var(--theme-color);
   height: calc(100vh - 32px);
   left: 0;
-  margin: 16px;
+  margin: 0 8px 8px;
+  max-width: 1024px;
   padding: 25px 0;
-  position: absolute;
+  position: fixed;
   right: 0;
-  transform: ${visible ? 'none' : 'translateY(-100vh)'};
-  transition: all 150ms ease-in-out;
+  transform: ${visible ? 'none' : 'translateY(-200vh)'};
+  //transition: all 250ms ease-in-out;
   z-index: 1;
+
+  @media(min-width: 1056px){
+    margin: 0 auto 8px;
+  }
 
   h1 {
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 2rem;
     font-weight: 1000;
     margin-top: 0;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 
   button {
