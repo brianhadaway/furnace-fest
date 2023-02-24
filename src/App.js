@@ -3,6 +3,7 @@ import { css } from "@emotion/css";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import moment from "moment";
 import mixpanel from "mixpanel-browser";
+import { roughStyle } from "./utils/constants";
 
 import bands from "./data/bands.json";
 import "./App.css";
@@ -26,6 +27,7 @@ const MIXPANEL_TOKEN = "3faf17b2a8fcd5797d67112ca865714e";
 const THEME_COLORS = ["#aecd81", "#e99b60", "#dba1be", "#c4c4c4", "#e9dd69", "#a6d0cf"];
 const COLOR_INDEX = Math.floor(Math.random() * THEME_COLORS.length);
 
+
 const styles = css`
   --theme-color: ${THEME_COLORS[COLOR_INDEX]};
 
@@ -37,20 +39,70 @@ const styles = css`
     background-color: var(--theme-color);
     background-image: url(${texture});
     background-size: cover;
-    border-bottom: 8px solid black;
+    border-bottom: 8px solid #2e2e2e;
     padding-top: 8px;
     position: sticky;
     top: 0;
     z-index: 10;
+
+    .header-inner {
+      align-items: center; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 16px;
+
+      @media (min-width: 720px) {
+        flex-direction: row;
+      }
+    }
+
+    .skewed-header {
+      ${roughStyle}
+      color: var(--theme-color);
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      transform: skew(1deg, 2deg);
+
+      h1 {
+        font-size: 1.5rem;
+        font-variation-settings: 'wght' 700, 'wdth' 90, 'slnt' 0;
+        line-height: 1;
+        margin: 0;
+        text-transform: uppercase;
+        transform: skew(-1deg, -2deg);
+      }
+
+      &.skewed-header-secondary,
+      &.skewed-header-tertiary {
+        font-variation-settings: 'wght' 500, 'wdth' 100, 'slnt' 0;
+        padding: 10px;
+        text-transform: uppercase;
+        h2 {
+          font-size: 0.8rem;
+          margin: 0;
+        }
+      }
+
+      &.skewed-header-secondary {
+        transform: skew(0deg, 2deg) rotate(-5deg);
+
+        .skewed-header-content {
+          transform: skew(0deg, -2deg);
+        }
+      }
+
+      &.skewed-header-tertiary {
+        transform: skew(0deg, 2deg);
+
+        .skewed-header-content {
+          transform: none;
+        }
+      }
+    }
   }
-  
-  h1 {
-    font-size: 4rem;
-    font-weight: 1000;
-    line-height: 1;
-    margin: 0;
-    text-transform: uppercase;
-  }
+
   
   h5 {
     margin: 0;
@@ -69,7 +121,7 @@ const styles = css`
   }
 
   .date-pill {
-    background: black;
+    ${roughStyle}
     color: var(--theme-color);
     font-weight: 700;
     height: 32px;

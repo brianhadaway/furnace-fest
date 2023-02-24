@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/css";
 import { DAYS } from "../App";
-import { stages } from "../utils/constants";
+import { roughStyle, stages } from "../utils/constants";
 
 const styles = css`
   align-items: center;
@@ -44,14 +44,16 @@ const styles = css`
     }
 
     &.tier-2 {
-      background: black;
+      ${roughStyle}
       margin-bottom: 16px;
       min-height: 56px;
     }
   }
 
   .band {
-    color: black;
+    ${roughStyle}
+    background-clip: text;
+    color: transparent;
     cursor: pointer;
     padding: 5px;
     text-transform: uppercase;
@@ -64,13 +66,13 @@ const styles = css`
 
       margin-left: 2rem;
       margin-right: 2rem;
+      padding: 4px 8px;
     }
 
     &.tier-2 {
-      background: black;
       color: var(--theme-color);
       font-size: 1.75rem;
-      padding: 4px 16px;
+      padding: 4px 12px;
     }
 
     &.tier-3 {
@@ -82,9 +84,15 @@ const styles = css`
 
     &.selected,
     &:hover {
-      background: black;
+      ${roughStyle}
+      background-clip: border-box;
       color: var(--theme-color);
       text-decoration: underline;
+
+      &.tier-2 {
+        background-color: var(--theme-color);
+        color: #2e2e2e;
+      }
     }
   }
 `;

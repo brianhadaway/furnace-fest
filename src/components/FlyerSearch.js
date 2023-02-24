@@ -13,7 +13,9 @@ const styles = css`
   background-size: cover;
   margin: 0 auto;
   max-width: 1024px;
+  overflow: hidden;
   padding: 0 0 16px;
+  position: relative;
 `
 
 export default function FlyerSearch({ bands, bandsByDay }) {
@@ -50,23 +52,29 @@ export default function FlyerSearch({ bands, bandsByDay }) {
   return (
     <div className={styles}>
       <header>
-        <h5>the unofficial</h5>
-        <h1>Furnace Fest</h1>
-
-        <h5>lineup & schedule</h5>
+        <div className="header-inner">
+          <div className="skewed-header skewed-header-secondary">
+            <h2 className="skewed-header-content">Sloss Furnaces<br/>Birmingham, AL</h2>
+          </div>
+          <div className="skewed-header">
+            <h1>Furnace Fest<br/>SEP 22-24 2023</h1>
+          </div>
+          <div className="skewed-header skewed-header-tertiary">
+            <h2 className="skewed-header-content">Tickets & More<br/>FurnaceFest.us</h2>
+          </div>
+        </div>
         <Search
           items={bands}
           handleOnSearch={handleOnSearch}
           handleOnSelect={handleOnSelect}
           handleOnClear={handleOnClear}
         />
-        {detailsVisible && (
-          <BandDetails
-            band={detailBand}
-            handleOnClose={() => setDetailsVisible(false)}
-          />
-        )}
       </header>
+      <BandDetails
+          band={detailBand}
+          handleOnClose={() => setDetailsVisible(false)}
+          visible={detailsVisible}
+        />
       <BandList
         bands={bandsByDay}
         selectedBands={selectedBands}

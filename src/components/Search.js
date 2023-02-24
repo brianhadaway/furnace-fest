@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { css } from "@emotion/css";
 
 const styles = css`
-  margin: 20px auto 50px;
+  margin: 20px auto;
   width: 375px;
   z-index: 10;
 
