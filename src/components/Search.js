@@ -8,7 +8,7 @@ const styles = css`
   width: 360px;
   z-index: 10;
 
-  @media (min-width: 400px) {
+  @media (min-width: 440px) {
     width: 400px;
   }
 `;
