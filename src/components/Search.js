@@ -46,10 +46,27 @@ export default function Search({
         onHover={handleOnHover}
         onSelect={handleOnSelect}
         onFocus={handleOnFocus}
-        placeholder="Enter a band..."
+        placeholder="SEARCH LINEUP"
         //autoFocus
         formatResult={formatResult}
         fuseOptions={{ threshold: 0.3 }}
+        styling={{
+          height: "34px",
+          border: "1px solid #2e2e2e",
+          borderRadius: "0",
+          backgroundColor: "var(--theme-color)",
+          //boxShadow: "none",
+          hoverBackgroundColor: "rgba(46,46,46,0.25)",
+          color: "#2e2e2e",
+          fontSize: ".75rem",
+          fontFamily: "Roboto Flex",
+          iconColor: "#2e2e2e",
+          lineColor: "rgba(46,46,46,0.5)",
+          placeholderColor: "rgba(46,46,46,0.5)",
+          clearIconMargin: "3px 8px 0 0",
+          textTransform: "uppercase",
+          zIndex: 1000,
+        }}
       />
     </div>
   );

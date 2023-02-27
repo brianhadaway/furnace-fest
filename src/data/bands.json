@@ -1,711 +1,1234 @@
 [
-        {
-          "name": "MXPX",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 2,
-          "time":  ["2023-09-22 21:55","2023-09-22 23:00:00"],
-          "id": 87,
-          "albumPlay": true,
-          "tier": 1 },
-        {
-          "name": "Hatebreed",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 2,
-          "time":  ["2023-09-22 20:45:00","2023-09-22 21:35:00"],
-          "id": 58,
-          "tier": 2 },
-        {
-          "name": "Anberlin",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 2,
-          "time":  ["2023-09-22 19:35:00","2023-09-22 20:25:00"],
-          "id": 3,
-          "tier": 2 },
-        {
-          "name": "Relient K",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 2,
-          "time":  ["2023-09-22 15:25:00","2023-09-22 16:05:00"],
-          "id": 51,
-          "tier": 2 },
-        {
-          "name": "Alcoa",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 1,
-          "time":  ["2023-09-22 20:50:00","2023-09-22 21:45:00"],
-          "id": 66,
-          "tier": 3 },
-        {
-          "name": "Braid",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 2,
-          "time":  ["2023-09-22 18:30:00","2023-09-22 19:20:00"],
-          "id": 64,
-          "tier": 3 },
-        {
-          "name": "Gideon",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 0,
-          "time":  ["2023-09-22 15:05:00","2023-09-22 15:40:00"],
-          "id": 90,
-          "tier": 3 },
-        {
-          "name": "Holy Wars",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 1,
-          "time":  ["2023-09-22 19:45:00","2023-09-22 20:30:00"],
-          "id": 77,
-          "tier": 3 },
-        {
-          "name": "Hopesfall",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 0,
-          "time":  ["2023-09-22 18:25:00","2023-09-22 19:05:00"],
-          "id": 5,
-          "tier": 3 },
-        {
-          "name": "Kid Liberty",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 2,
-          "time":  ["2023-09-22 16:20:00","2023-09-22 17:05:00"],
-          "id": 6,
-          "tier": 3 },
-        {
-          "name": "Knuckle Puck",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 1,
-          "time":  ["2023-09-22 13:00:00","2023-09-22 13:30:00"],
-          "id": 12,
-          "tier": 3 },
-        {
-          "name": "Made Aware",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 1,
-          "time":  ["2023-09-22 14:35:00","2023-09-22 15:10:00"],
-          "id": 13,
-          "tier": 3 },
-        {
-          "name": "Ninety Pound Wuss",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 1,
-          "time":  ["2023-09-23 14:35:00","2023-09-23 15:10:00"],
-          "id": 15,
-          "tier": 3 },
-        {
-          "name": "No Cure",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 0,
-          "time":  ["2023-09-22 12:40:00","2023-09-22 13:10:00"],
-          "id": 78,
-          "tier": 3 },
-        {
-          "name": "No Trigger",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 2,
-          "time":  ["2023-09-22 12:55:00","2023-09-22 13:30:00"],
-          "id": 91,
-          "tier": 3 },
-        {
-          "name": "Norma Jean",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 0,
-          "time":  ["2023-09-22 13:25:00","2023-09-22 14:00:00"],
-          "id": 20,
-          "tier": 3 },
-        {
-          "name": "Open Hand",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 0,
-          "time":  ["2023-09-22 17:35:00","2023-09-22 18:10:00"],
-          "id": 21,
-          "tier": 3 },
-        {
-          "name": "Orthodox",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 1,
-          "time":  ["2023-09-22 16:15:00","2023-09-22 16:50:00"],
-          "id": 23,
-          "tier": 3 },
-        {
-          "name": "Piebald",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 0,
-          "time":  ["2023-09-22 12:00:00","2023-09-22 12:25:00"],
-          "id": 26,
-          "tier": 3 },
-        {
-          "name": "Project 86",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 0,
-          "time":  ["2023-09-22 19:25:00","2023-09-22 20:15:00"],
-          "id": 27,
-          "tier": 3 },
-        {
-          "name": "Showbread",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 1,
-          "time":  ["2023-09-22 12:20:00","2023-09-22 12:45:00"],
-          "id": 30,
-          "tier": 3 },
-        {
-          "name": "Slow Pulse",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 0,
-          "time":  ["2023-09-22 14:15:00","2023-09-22 14:50:00"],
-          "id": 32,
-          "tier": 3 },
-        {
-          "name": "Sparta",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 1,
-          "time":  ["2023-09-22 15:25:00","2023-09-22 16:00:00"],
-          "id": 34,
-          "tier": 3 },
-        {
-          "name": "Taylor Acorn",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 2,
-          "time":  ["2023-09-22 13:45:00","2023-09-22 14:20:00"],
-          "id": 37,
-          "tier": 3 },
-        {
-          "name": "Walls of Jericho",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 1,
-          "time":  ["2023-09-22 17:05:00","2023-09-22 17:40:00"],
-          "id": 39,
-          "tier": 3 },
-        {
-          "name": "With Blood Comes Cleansing",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 1,
-          "time":  ["2023-09-22 17:55:00","2023-09-22 18:35:00"],
-          "id": 47,
-          "tier": 3 },
-        {
-          "name": "Whitsett",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 0,
-          "time":  ["2023-09-22 20:35:00","2023-09-22 21:30:00"],
-          "id": 56,
-          "tier": 3 },
-        {
-          "name": "With Honor",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 2,
-          "time":  ["2023-09-22 17:20:00","2023-09-22 18:15:00"],
-          "id": 59,
-          "tier": 3 },
-        {
-          "name": "Vein.FM",
-          "date": "friday",
-          "dateDisplay": "Friday Sep 22",
-          "stageId": 2,
-          "time":  ["2023-09-22 12:10:00","2023-09-22 12:40:00"],
-          "id": 16,
-          "tier": 3 },
-        {
-          "name": "Turnstile",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 2,
-          "time":  ["2023-09-23 21:55:00","2023-09-22 23:00:00"],
-          "id": 92,
-          "tier": 1 },
-        {
-          "name": "Head Automatica",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 2,
-          "time":  ["2023-09-23 20:45:00","2023-09-23 21:35:00"],
-          "id": 48,
-          "tier": 2 },
-        {
-          "name": "Thursday",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 2,
-          "time":  ["2023-09-23 19:35:00","2023-09-23 20:25:00"],
-          "id": 79,
-          "tier": 2 },
-        {
-          "name": "Saosin",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 2,
-          "time":  ["2023-09-23 17:20:00","2023-09-23 18:15:00"],
-          "id": 25,
-          "albumPlay": true,
-          "tier": 2 },
-        {
-          "name": "Enter Shikari",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 1,
-          "time":  ["2023-09-23 20:50:00","2023-09-23 21:45:00"],
-          "id": 11,
-          "albumPlay": true,
-          "tier": 2 },
-        {
-          "name": "Anxious",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 2,
-          "time":  ["2023-09-23 18:30:00","2023-09-23 19:20:00"],
-          "id": 63,
-          "tier": 3 },
-        {
-          "name": "Becoming the Archetype",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 1,
-          "time":  ["2023-09-23 12:20:00","2023-09-23 12:45:00"],
-          "id": 1,
-          "tier": 3 },
-        {
-          "name": "Bronx, The",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 0,
-          "time":  ["2023-09-23 15:05:00","2023-09-23 15:40:00"],
-          "id": 93,
-          "tier": 3 },
-        {
-          "name": "Drain",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 1,
-          "time":  ["2023-09-23 17:05:00","2023-09-23 17:40:00"],
-          "id": 10,
-          "tier": 3 },
-        {
-          "name": "Extol",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 2,
-          "time":  ["2023-09-23 16:20:00","2023-09-23 17:05:00"],
-          "id": 17,
-          "tier": 3 },
-        {
-          "name": "Foreign Hands",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 1,
-          "time":  ["2023-09-23 18:50:00","2023-09-23 19:30:00"],
-          "id": 18,
-          "tier": 3 },
-        {
-          "name": "Gorilla Biscuits",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 1,
-          "time":  ["2023-09-23 17:55:00","2023-09-23 18:35:00"],
-          "id": 24,
-          "tier": 3 },
-        {
-          "name": "Grand Champ",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 1,
-          "time":  ["2023-09-23 16:15:00","2023-09-23 16:50:00"],
-          "id": 28,
-          "tier": 3 },
-        {
-          "name": "High Vis",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 0,
-          "time":  ["2023-09-23 18:25:00","2023-09-23 19:05:00"],
-          "id": 29,
-          "tier": 3 },
-        {
-          "name": "Holyname",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 2,
-          "time":  ["2023-09-23 12:10:00","2023-09-23 12:40:00"],
-          "id": 91,
-          "tier": 3 },
-        {
-          "name": "Living Sacrifice",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 0,
-          "time":  ["2023-09-23 16:45:00","2023-09-23 17:20:00"],
-          "id": 35,
-          "tier": 3 },
-        {
-          "name": "Loathe",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 2,
-          "time":  ["2023-09-23 13:45:00","2023-09-23 14:20:00"],
-          "id": 36,
-          "tier": 3 },
-        {
-          "name": "Mindforce",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 2,
-          "time":  ["2023-09-23 15:25:00","2023-09-23 16:05:00"],
-          "id": 81,
-          "tier": 3 },
-        {
-          "name": "Narrow Head",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 0,
-          "time":  ["2023-09-23 12:00:00","2023-09-23 12:25:00"],
-          "id": 41,
-          "tier": 3 },
-        {
-          "name": "Pink Spiders, The",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 1,
-          "time":  ["2023-09-23 13:00:00","2023-09-23 13:30:00"],
-          "id": 46,
-          "tier": 3 },
-        {
-          "name": "Scowl",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 1,
-          "time":  ["2023-09-23 19:45:00","2023-09-23 20:30:00"],
-          "id": 50,
-          "tier": 3 },
-        {
-          "name": "Teenage Wrist",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 1,
-          "time":  ["2023-09-23 15:25:00","2023-09-23 16:00:00"],
-          "id": 52,
-          "tier": 3 },
-        {
-          "name": "Terror",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 0,
-          "time":  ["2023-09-23 12:40:00","2023-09-23 13:10:00"],
-          "id": 94,
-          "tier": 3 },
-        {
-          "name": "Training for Utopia",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 2,
-          "time":  ["2023-09-23 14:35:00","2023-09-23 15:10:00"],
-          "id": 57,
-          "tier": 3 },
-        {
-          "name": "Trash Talk",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 0,
-          "time":  ["2023-09-23 20:35:00","2023-09-23 21:30:00"],
-          "id": 62,
-          "albumPlay": true,
-          "tier": 3 },
-        {
-          "name": "Wielded Steel",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 0,
-          "time":  ["2023-09-23 15:55:00","2023-09-23 16:30:00"],
-          "id": 65,
-          "tier": 3 },
-        {
-          "name": "Will Haven",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 1,
-          "time":  ["2023-09-23 13:45:00","2023-09-23 14:20:00"],
-          "id": 84,
-          "tier": 3 },
-        {
-          "name": "Youth of Today",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 0,
-          "time":  ["2023-09-23 19:25:00","2023-09-23 20:15:00"],
-          "id": 85,
-          "tier": 3 },
-        {
-          "name": "Zao",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 0,
-          "time":  ["2023-09-23 17:35:00","2023-09-23 18:10:00"],
-          "id": 70,
-          "tier": 3 },
-        {
-          "name": "Zulu",
-          "date": "saturday",
-          "dateDisplay": "Saturday Sep 23",
-          "stageId": 0,
-          "time":  ["2023-09-23 14:15:00","2023-09-23 14:50:00"],
-          "id": 71,
-          "tier": 3 },
-        {
-          "name": "Bane",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 2,
-          "time":  ["2023-09-24 21:55:00","2023-09-24 23:00:00"],
-          "id": 49,
-          "tier": 1 },
-        {
-          "name": "Pennywise",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 2,
-          "time":  ["2023-09-24 20:45:00","2023-09-24 21:35:00"],
-          "id": 19,
-          "tier": 1 },
-        {
-          "name": "Haste the Day",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 2,
-          "time":  ["2023-09-24 19:35:00","2023-09-24 20:25:00"],
-          "id": 86,
-          "tier": 2 },
-        {
-          "name": "Between the Buried & Me",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 2,
-          "time":  ["2023-09-24 17:20:00","2023-09-24 18:15:00"],
-          "id": 88,
-          "tier": 2 },
-        {
-          "name": "Bouncing Souls",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 1,
-          "time":  ["2023-09-24 20:50:00","2023-09-24 21:45:00"],
-          "id": 4,
-          "tier": 2 },
-        {
-          "name": "A Plea for Purging",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 1,
-          "time":  ["2023-09-24 17:55:00","2023-09-24 18:35:00"],
-          "id": 8,
-          "tier": 3 },
-        {
-          "name": "Armor for Sleep",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 0,
-          "time":  ["2023-09-24 16:45:00","2023-09-24 17:20:00"],
-          "id": 0,
-          "tier": 3 },
-        {
-          "name": "As Cities Burn",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 1,
-          "time":  ["2023-09-24 18:50:00","2023-09-24 19:30:00"],
-          "id": 2,
-          "tier": 3 },
-        {
-          "name": "Blessed By A Broken Heart",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 0,
-          "time":  ["2023-09-24 19:25:00","2023-09-24 20:15:00"],
-          "id": 7,
-          "tier": 3 },
-        {
-          "name": "Callous Daoboys, The",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 2,
-          "time":  ["2023-09-24 13:45:00","2023-09-24 14:20:00"],
-          "id": 14,
-          "tier": 3 },
-        {
-          "name": "Casey",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 1,
-          "time":  ["2023-09-24 13:45:00","2023-09-24 14:20:00"],
-          "id": 22,
-          "tier": 3 },
-        {
-          "name": "Chasing Victory",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 2,
-          "time":  ["2023-09-24 15:25:00","2023-09-24 16:05:00"],
-          "id": 96,
-          "albumPlay": true,
-          "tier": 3 },
-        {
-          "name": "Defeater",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 0,
-          "time":  ["2023-09-24 13:25:00","2023-09-24 14:00:00"],
-          "id": 31,
-          "tier": 3 },
-        {
-          "name": "Further Seems Forever",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 1,
-          "time":  ["2023-09-24 13:00:00","2023-09-24 13:30:00"],
-          "id": 33,
-          "tier": 3 },
-        {
-          "name": "Ghoti Hook",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 0,
-          "time":  ["2023-09-24 15:05:00","2023-09-24 15:40:00"],
-          "id": 80,
-          "tier": 3 },
-        {
-          "name": "Gutter",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 2,
-          "time":  ["2023-09-24 12:55:00","2023-09-24 13:30:00"],
-          "id": 40,
-          "tier": 3 },
-        {
-          "name": "Inclination",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 0,
-          "time":  ["2023-09-24 12:00:00","2023-09-24 12:25:00"],
-          "id": 42,
-          "tier": 3 },
-        {
-          "name": "Insyderz, The",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 0,
-          "time":  ["2023-09-24 15:55:00","2023-09-24 16:30:00"],
-          "id": 43,
-          "tier": 3 },
-        {
-          "name": "It Dies Today",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 1,
-          "time":  ["2023-09-24 14:35:00","2023-09-24 15:10:00"],
-          "id": 44,
-          "tier": 3 },
-        {
-          "name": "Judge",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 2,
-          "time":  ["2023-09-24 16:20:00","2023-09-24 17:05:00"],
-          "id": 45,
-          "tier": 3 },
-        {
-          "name": "Mae",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 0,
-          "time":  ["2023-09-24 20:35:00","2023-09-24 21:30:00"],
-          "id": 53,
-          "tier": 3 },
-        {
-          "name": "Militarie Gun",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 0,
-          "time":  ["2023-09-24 18:25:00","2023-09-24 19:05:00"],
-          "id": 60,
-          "tier": 3 },
-        {
-          "name": "One King Down",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 2,
-          "time":  ["2023-09-24 12:10:00","2023-09-24 12:40:00"],
-          "id": 97,
-          "tier": 3 },
-        {
-          "name": "Prayer for Cleansing",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 1,
-          "time":  ["2023-09-24 15:25:00","2023-09-24 16:00:00"],
-          "id": 83,
-          "tier": 3 },
-        {
-          "name": "Qualifier",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 1,
-          "time":  ["2023-09-24 19:45:00","2023-09-24 20:30:00"],
-          "id": 67,
-          "tier": 3 },
-        {
-          "name": "Strife",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 0,
-          "time":  ["2023-09-24 17:35:00","2023-09-24 18:10:00"],
-          "id": 68,
-          "tier": 3 },
-        {
-          "name": "Taking Meds",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 0,
-          "time":  ["2023-09-24 14:15:00","2023-09-24 14:50:00"],
-          "id": 69,
-          "tier": 3 },
-        {
-          "name": "Trenches",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 2,
-          "time":  ["2023-09-24 14:35:00","2023-09-24 15:10:00"],
-          "id": 98,
-          "tier": 3 },
-        {
-          "name": "Valleyheart",
-          "date": "sunday",
-          "dateDisplay": "Sunday Sep 24",
-          "stageId": 1,
-          "time":  ["2023-09-24 16:15:00","2023-09-24 16:50:00"],
-          "id": 73,
-          "tier": 3 }
+  {
+    "name": "MXPX",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 2,
+    "time": [
+      "2023-09-22 21:55",
+      "2023-09-22 23:00:00"
+    ],
+    "id": 87,
+    "spotifyLink": "https://open.spotify.com/artist/1cSpfa4Un4NCOzeOKgGtG9?si=E2r5hvQySmKHtsL_VDPS5g",
+    "bandImg": "/furnace-fest/assets/bands/mxpx.jpg",
+    "tier": 1
+  },
+  {
+    "name": "Hatebreed",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 2,
+    "time": [
+      "2023-09-22 20:45:00",
+      "2023-09-22 21:35:00"
+    ],
+    "id": 58,
+    "spotifyLink": "https://open.spotify.com/artist/17Mb968quDHpjCkIyq30QV?si=gmqQHDKiQGCTGP62TfQykA",
+    "bandImg": "/furnace-fest/assets/bands/hatebreed.jpg",
+    "tier": 2
+  },
+  {
+    "name": "Anberlin",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 2,
+    "time": [
+      "2023-09-22 19:35:00",
+      "2023-09-22 20:25:00"
+    ],
+    "id": 3,
+    "spotifyLink": "https://open.spotify.com/artist/5v61OSg53KaQxGMpErkBNp?si=uB6gKj_1QjO045yvSci2gg",
+    "bandImg": "/furnace-fest/assets/bands/anberlin.jpg",
+    "tier": 2
+  },
+  {
+    "name": "Relient K",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 2,
+    "time": [
+      "2023-09-22 15:25:00",
+      "2023-09-22 16:05:00"
+    ],
+    "id": 51,
+    "spotifyLink": "https://open.spotify.com/artist/3nJWBJvK7uGvfp4iZh9CkN?si=BMuI5DOQQF6bnf0pTpZk_A",
+    "bandImg": "/furnace-fest/assets/bands/relientk.jpg",
+    "tier": 2
+  },
+  {
+    "name": "Alcoa",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 1,
+    "time": [
+      "2023-09-22 20:50:00",
+      "2023-09-22 21:45:00"
+    ],
+    "id": 66,
+    "spotifyLink": "https://open.spotify.com/artist/6Aymk2ThG16rJYjnOPlFN2?si=4NKprTcjSAOWdEg6gbOzoQ",
+    "bandImg": "",
+    "tier": 3
+  },
+  {
+    "name": "Braid",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 2,
+    "time": [
+      "2023-09-22 18:30:00",
+      "2023-09-22 19:20:00"
+    ],
+    "id": 64,
+    "spotifyLink": "https://open.spotify.com/artist/36gdsrHzKZ0Wyb3uH7ZbEv?si=JT91Bq3pTdqrW8vtUvtMCQ",
+    "bandImg": "/furnace-fest/assets/bands/braid.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Gideon",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 0,
+    "time": [
+      "2023-09-22 15:05:00",
+      "2023-09-22 15:40:00"
+    ],
+    "id": 90,
+    "spotifyLink": "https://open.spotify.com/artist/3Zj2B8yAi8gHoR8vpsPatZ?si=NrHU8PLzShywEMok9zOHJw",
+    "bandImg": "/furnace-fest/assets/bands/gideon.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Holy Wars",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 1,
+    "time": [
+      "2023-09-22 19:45:00",
+      "2023-09-22 20:30:00"
+    ],
+    "id": 77,
+    "spotifyLink": "https://open.spotify.com/artist/2dTOWcCL0cYviin0Uz1lj4?si=gBmUpACoRd-2iJw1ZhaOYA",
+    "bandImg": "/furnace-fest/assets/bands/holywars.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Hopesfall",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 0,
+    "time": [
+      "2023-09-22 18:25:00",
+      "2023-09-22 19:05:00"
+    ],
+    "id": 5,
+    "spotifyLink": "https://open.spotify.com/artist/1FEgAMsvc3DM2OtT4dPn9i?si=jaaYdqvFR66F8hJUqb8kVA",
+    "bandImg": "/furnace-fest/assets/bands/hopesfall.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Kid Liberty",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 2,
+    "time": [
+      "2023-09-22 16:20:00",
+      "2023-09-22 17:05:00"
+    ],
+    "id": 6,
+    "spotifyLink": "https://open.spotify.com/artist/0A5hWmrfSIIExWIb1bsWlo?si=6mDKdW4BTCSz0zIrDhPMHAm",
+    "bandImg": "/furnace-fest/assets/bands/kidliberty.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Knuckle Puck",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 1,
+    "time": [
+      "2023-09-22 13:00:00",
+      "2023-09-22 13:30:00"
+    ],
+    "id": 12,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Made Aware",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 1,
+    "time": [
+      "2023-09-22 14:35:00",
+      "2023-09-22 15:10:00"
+    ],
+    "id": 13,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Ninety Pound Wuss",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 14:35:00",
+      "2023-09-23 15:10:00"
+    ],
+    "id": 15,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "No Cure",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 0,
+    "time": [
+      "2023-09-22 12:40:00",
+      "2023-09-22 13:10:00"
+    ],
+    "id": 78,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "No Trigger",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 2,
+    "time": [
+      "2023-09-22 12:55:00",
+      "2023-09-22 13:30:00"
+    ],
+    "id": 91,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Norma Jean",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 0,
+    "time": [
+      "2023-09-22 13:25:00",
+      "2023-09-22 14:00:00"
+    ],
+    "id": 20,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Open Hand",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 0,
+    "time": [
+      "2023-09-22 17:35:00",
+      "2023-09-22 18:10:00"
+    ],
+    "id": 21,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Orthodox",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 1,
+    "time": [
+      "2023-09-22 16:15:00",
+      "2023-09-22 16:50:00"
+    ],
+    "id": 23,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Piebald",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 0,
+    "time": [
+      "2023-09-22 12:00:00",
+      "2023-09-22 12:25:00"
+    ],
+    "id": 26,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Project 86",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 0,
+    "time": [
+      "2023-09-22 19:25:00",
+      "2023-09-22 20:15:00"
+    ],
+    "id": 27,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Showbread",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 1,
+    "time": [
+      "2023-09-22 12:20:00",
+      "2023-09-22 12:45:00"
+    ],
+    "id": 30,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Slow Pulse",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 0,
+    "time": [
+      "2023-09-22 14:15:00",
+      "2023-09-22 14:50:00"
+    ],
+    "id": 32,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Sparta",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 1,
+    "time": [
+      "2023-09-22 15:25:00",
+      "2023-09-22 16:00:00"
+    ],
+    "id": 34,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Taylor Acorn",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 2,
+    "time": [
+      "2023-09-22 13:45:00",
+      "2023-09-22 14:20:00"
+    ],
+    "id": 37,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Walls of Jericho",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 1,
+    "time": [
+      "2023-09-22 17:05:00",
+      "2023-09-22 17:40:00"
+    ],
+    "id": 39,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "With Blood Comes Cleansing",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 1,
+    "time": [
+      "2023-09-22 17:55:00",
+      "2023-09-22 18:35:00"
+    ],
+    "id": 47,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Whitsett",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 0,
+    "time": [
+      "2023-09-22 20:35:00",
+      "2023-09-22 21:30:00"
+    ],
+    "id": 56,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "With Honor",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 2,
+    "time": [
+      "2023-09-22 17:20:00",
+      "2023-09-22 18:15:00"
+    ],
+    "id": 59,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Vein.FM",
+    "date": "friday",
+    "dateDisplay": "Friday Sep 22",
+    "stageId": 2,
+    "time": [
+      "2023-09-22 12:10:00",
+      "2023-09-22 12:40:00"
+    ],
+    "id": 16,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Turnstile",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 2,
+    "time": [
+      "2023-09-23 21:55:00",
+      "2023-09-22 23:00:00"
+    ],
+    "id": 92,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 1
+  },
+  {
+    "name": "Head Automatica",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 2,
+    "time": [
+      "2023-09-23 20:45:00",
+      "2023-09-23 21:35:00"
+    ],
+    "id": 48,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 2
+  },
+  {
+    "name": "Thursday",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 2,
+    "time": [
+      "2023-09-23 19:35:00",
+      "2023-09-23 20:25:00"
+    ],
+    "id": 79,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 2
+  },
+  {
+    "name": "Saosin",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 2,
+    "time": [
+      "2023-09-23 17:20:00",
+      "2023-09-23 18:15:00"
+    ],
+    "id": 25,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 2
+  },
+  {
+    "name": "Enter Shikari",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 20:50:00",
+      "2023-09-23 21:45:00"
+    ],
+    "id": 11,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 2
+  },
+  {
+    "name": "Anxious",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 2,
+    "time": [
+      "2023-09-23 18:30:00",
+      "2023-09-23 19:20:00"
+    ],
+    "id": 63,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Becoming the Archetype",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 12:20:00",
+      "2023-09-23 12:45:00"
+    ],
+    "id": 1,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Bronx, The",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 0,
+    "time": [
+      "2023-09-23 15:05:00",
+      "2023-09-23 15:40:00"
+    ],
+    "id": 93,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Drain",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 17:05:00",
+      "2023-09-23 17:40:00"
+    ],
+    "id": 10,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Extol",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 2,
+    "time": [
+      "2023-09-23 16:20:00",
+      "2023-09-23 17:05:00"
+    ],
+    "id": 17,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Foreign Hands",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 18:50:00",
+      "2023-09-23 19:30:00"
+    ],
+    "id": 18,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Gorilla Biscuits",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 17:55:00",
+      "2023-09-23 18:35:00"
+    ],
+    "id": 24,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Grand Champ",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 16:15:00",
+      "2023-09-23 16:50:00"
+    ],
+    "id": 28,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "High Vis",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 0,
+    "time": [
+      "2023-09-23 18:25:00",
+      "2023-09-23 19:05:00"
+    ],
+    "id": 29,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Holyname",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 2,
+    "time": [
+      "2023-09-23 12:10:00",
+      "2023-09-23 12:40:00"
+    ],
+    "id": 91,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Living Sacrifice",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 0,
+    "time": [
+      "2023-09-23 16:45:00",
+      "2023-09-23 17:20:00"
+    ],
+    "id": 35,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Loathe",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 2,
+    "time": [
+      "2023-09-23 13:45:00",
+      "2023-09-23 14:20:00"
+    ],
+    "id": 36,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Mindforce",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 2,
+    "time": [
+      "2023-09-23 15:25:00",
+      "2023-09-23 16:05:00"
+    ],
+    "id": 81,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Narrow Head",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 0,
+    "time": [
+      "2023-09-23 12:00:00",
+      "2023-09-23 12:25:00"
+    ],
+    "id": 41,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Pink Spiders, The",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 13:00:00",
+      "2023-09-23 13:30:00"
+    ],
+    "id": 46,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Scowl",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 19:45:00",
+      "2023-09-23 20:30:00"
+    ],
+    "id": 50,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Teenage Wrist",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 15:25:00",
+      "2023-09-23 16:00:00"
+    ],
+    "id": 52,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Terror",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 0,
+    "time": [
+      "2023-09-23 12:40:00",
+      "2023-09-23 13:10:00"
+    ],
+    "id": 94,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Training for Utopia",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 2,
+    "time": [
+      "2023-09-23 14:35:00",
+      "2023-09-23 15:10:00"
+    ],
+    "id": 57,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Trash Talk",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 0,
+    "time": [
+      "2023-09-23 20:35:00",
+      "2023-09-23 21:30:00"
+    ],
+    "id": 62,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Wielded Steel",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 0,
+    "time": [
+      "2023-09-23 15:55:00",
+      "2023-09-23 16:30:00"
+    ],
+    "id": 65,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Will Haven",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 1,
+    "time": [
+      "2023-09-23 13:45:00",
+      "2023-09-23 14:20:00"
+    ],
+    "id": 84,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Youth of Today",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 0,
+    "time": [
+      "2023-09-23 19:25:00",
+      "2023-09-23 20:15:00"
+    ],
+    "id": 85,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Zao",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 0,
+    "time": [
+      "2023-09-23 17:35:00",
+      "2023-09-23 18:10:00"
+    ],
+    "id": 70,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Zulu",
+    "date": "saturday",
+    "dateDisplay": "Saturday Sep 23",
+    "stageId": 0,
+    "time": [
+      "2023-09-23 14:15:00",
+      "2023-09-23 14:50:00"
+    ],
+    "id": 71,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Bane",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 2,
+    "time": [
+      "2023-09-24 21:55:00",
+      "2023-09-24 23:00:00"
+    ],
+    "id": 49,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 1
+  },
+  {
+    "name": "Pennywise",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 2,
+    "time": [
+      "2023-09-24 20:45:00",
+      "2023-09-24 21:35:00"
+    ],
+    "id": 19,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 1
+  },
+  {
+    "name": "Haste the Day",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 2,
+    "time": [
+      "2023-09-24 19:35:00",
+      "2023-09-24 20:25:00"
+    ],
+    "id": 86,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 2
+  },
+  {
+    "name": "Between the Buried & Me",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 2,
+    "time": [
+      "2023-09-24 17:20:00",
+      "2023-09-24 18:15:00"
+    ],
+    "id": 88,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 2
+  },
+  {
+    "name": "Bouncing Souls",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 1,
+    "time": [
+      "2023-09-24 20:50:00",
+      "2023-09-24 21:45:00"
+    ],
+    "id": 4,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 2
+  },
+  {
+    "name": "A Plea for Purging",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 1,
+    "time": [
+      "2023-09-24 17:55:00",
+      "2023-09-24 18:35:00"
+    ],
+    "id": 8,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Armor for Sleep",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 0,
+    "time": [
+      "2023-09-24 16:45:00",
+      "2023-09-24 17:20:00"
+    ],
+    "id": 0,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "As Cities Burn",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 1,
+    "time": [
+      "2023-09-24 18:50:00",
+      "2023-09-24 19:30:00"
+    ],
+    "id": 2,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Blessed By A Broken Heart",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 0,
+    "time": [
+      "2023-09-24 19:25:00",
+      "2023-09-24 20:15:00"
+    ],
+    "id": 7,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Callous Daoboys, The",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 2,
+    "time": [
+      "2023-09-24 13:45:00",
+      "2023-09-24 14:20:00"
+    ],
+    "id": 14,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Casey",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 1,
+    "time": [
+      "2023-09-24 13:45:00",
+      "2023-09-24 14:20:00"
+    ],
+    "id": 22,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Chasing Victory",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 2,
+    "time": [
+      "2023-09-24 15:25:00",
+      "2023-09-24 16:05:00"
+    ],
+    "id": 96,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Defeater",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 0,
+    "time": [
+      "2023-09-24 13:25:00",
+      "2023-09-24 14:00:00"
+    ],
+    "id": 31,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Further Seems Forever",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 1,
+    "time": [
+      "2023-09-24 13:00:00",
+      "2023-09-24 13:30:00"
+    ],
+    "id": 33,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Ghoti Hook",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 0,
+    "time": [
+      "2023-09-24 15:05:00",
+      "2023-09-24 15:40:00"
+    ],
+    "id": 80,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Gutter",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 2,
+    "time": [
+      "2023-09-24 12:55:00",
+      "2023-09-24 13:30:00"
+    ],
+    "id": 40,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Inclination",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 0,
+    "time": [
+      "2023-09-24 12:00:00",
+      "2023-09-24 12:25:00"
+    ],
+    "id": 42,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Insyderz, The",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 0,
+    "time": [
+      "2023-09-24 15:55:00",
+      "2023-09-24 16:30:00"
+    ],
+    "id": 43,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "It Dies Today",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 1,
+    "time": [
+      "2023-09-24 14:35:00",
+      "2023-09-24 15:10:00"
+    ],
+    "id": 44,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Judge",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 2,
+    "time": [
+      "2023-09-24 16:20:00",
+      "2023-09-24 17:05:00"
+    ],
+    "id": 45,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Mae",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 0,
+    "time": [
+      "2023-09-24 20:35:00",
+      "2023-09-24 21:30:00"
+    ],
+    "id": 53,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Militarie Gun",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 0,
+    "time": [
+      "2023-09-24 18:25:00",
+      "2023-09-24 19:05:00"
+    ],
+    "id": 60,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "One King Down",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 2,
+    "time": [
+      "2023-09-24 12:10:00",
+      "2023-09-24 12:40:00"
+    ],
+    "id": 97,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Prayer for Cleansing",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 1,
+    "time": [
+      "2023-09-24 15:25:00",
+      "2023-09-24 16:00:00"
+    ],
+    "id": 83,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Qualifier",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 1,
+    "time": [
+      "2023-09-24 19:45:00",
+      "2023-09-24 20:30:00"
+    ],
+    "id": 67,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Strife",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 0,
+    "time": [
+      "2023-09-24 17:35:00",
+      "2023-09-24 18:10:00"
+    ],
+    "id": 68,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Taking Meds",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 0,
+    "time": [
+      "2023-09-24 14:15:00",
+      "2023-09-24 14:50:00"
+    ],
+    "id": 69,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Trenches",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 2,
+    "time": [
+      "2023-09-24 14:35:00",
+      "2023-09-24 15:10:00"
+    ],
+    "id": 98,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  },
+  {
+    "name": "Valleyheart",
+    "date": "sunday",
+    "dateDisplay": "Sunday Sep 24",
+    "stageId": 1,
+    "time": [
+      "2023-09-24 16:15:00",
+      "2023-09-24 16:50:00"
+    ],
+    "id": 73,
+    "spotifyLink": "http://www.spotify.com",
+    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "tier": 3
+  }
 ]

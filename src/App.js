@@ -53,7 +53,7 @@ const styles = css`
       justify-content: space-between;
       margin: 0 16px;
 
-      @media (min-width: 720px) {
+      @media (min-width: 390px) {
         flex-direction: row;
       }
     }
@@ -67,12 +67,16 @@ const styles = css`
       transform: skew(1deg, 2deg);
 
       h1 {
-        font-size: 1.5rem;
+        font-size: 0.75rem;
         font-variation-settings: 'wght' 700, 'wdth' 90, 'slnt' 0;
         line-height: 1;
         margin: 0;
         text-transform: uppercase;
         transform: skew(-1deg, -2deg);
+
+        @media (min-width: 720px) {
+          font-size: 1.5rem;
+        }
       }
 
       &.skewed-header-secondary,
@@ -81,8 +85,11 @@ const styles = css`
         padding: 10px;
         text-transform: uppercase;
         h2 {
-          font-size: 0.8rem;
+          font-size: 0.4rem;
           margin: 0;
+          @media (min-width: 720px) {
+            font-size: 0.8rem;
+          }
         }
       }
 

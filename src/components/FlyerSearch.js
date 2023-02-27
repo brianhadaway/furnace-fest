@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import mixpanel from "mixpanel-browser";
 import {css} from '@emotion/css';
 
@@ -48,9 +48,11 @@ export default function FlyerSearch({ bands, bandsByDay }) {
     setDetailsVisible(false);
   };
 
+  const headerRef = useRef(null);
+
   return (
     <div className={styles}>
-      <header>
+      <header ref={headerRef}>
         <div className="header-inner">
           <div className="skewed-header skewed-header-secondary">
             <h2 className="skewed-header-content">Sloss Furnaces<br/>Birmingham, AL</h2>
@@ -71,6 +73,7 @@ export default function FlyerSearch({ bands, bandsByDay }) {
       </header>
       <BandDetails
           band={detailBand}
+          headerRef={headerRef.current}
           handleOnClose={() => setDetailsVisible(false)}
           visible={detailsVisible}
         />
