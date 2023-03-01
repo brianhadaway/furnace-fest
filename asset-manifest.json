@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/furnace-fest/static/css/main.2875917c.css",
-    "main.js": "/furnace-fest/static/js/main.72848238.js",
+    "main.js": "/furnace-fest/static/js/main.32f3c040.js",
     "static/js/787.7065bced.chunk.js": "/furnace-fest/static/js/787.7065bced.chunk.js",
     "static/media/wrinkle.png": "/furnace-fest/static/media/wrinkle.f07e2a938d4855a5a482.png",
     "static/media/rough.png": "/furnace-fest/static/media/rough.b18a6e5e91c7117db492.png",
     "index.html": "/furnace-fest/index.html",
     "main.2875917c.css.map": "/furnace-fest/static/css/main.2875917c.css.map",
-    "main.72848238.js.map": "/furnace-fest/static/js/main.72848238.js.map",
+    "main.32f3c040.js.map": "/furnace-fest/static/js/main.32f3c040.js.map",
     "787.7065bced.chunk.js.map": "/furnace-fest/static/js/787.7065bced.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2875917c.css",
-    "static/js/main.72848238.js"
+    "static/js/main.32f3c040.js"
   ]
 }
