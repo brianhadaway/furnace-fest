@@ -26,34 +26,31 @@ const styles = (visible, bandImg, headerRef) => css`
   background-color: var(--theme-color);
   color: var(--theme-color);
   height: calc(100vh - ${headerRef ? headerRef.offsetHeight : 0}px);
+  max-height: -webkit-fill-available;
+
   left: 0;
-  margin: 0 8px 8px;
+  margin: 0 8px;
   max-width: 1024px;
   padding: 0;
   position: fixed;
   right: 0;
   transform: ${visible ? 'none' : 'translateY(-200vh)'};
-  transition: all 250ms ease-in-out;
+  transition: all 300ms ease-in-out;
   z-index: 1;
 
-  &:before {
+  .bandImg {
     background-blend-mode: luminosity;
     background-color: var(--theme-color);
     background-image: url(${rough}), url(${bandImg});
     background-position: top center;
     background-repeat: repeat, no-repeat;
-    background-size: contain, cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    background-size: contain, contain;
     content: '';
     display: block;
-
-    @media(min-width: 768px) {
-      background-size: contain, cover;
-    }
+    padding-bottom: 42.8%;
+    width: 100%;
+    position: relative;
+    z-index: 10;
   }
 
   @media(min-width: 1056px){
@@ -68,43 +65,46 @@ const styles = (visible, bandImg, headerRef) => css`
 
   .bandMeta {
     ${roughStyle}
-    position: absolute;
-    display: flex;
-    padding: 8px;
-    align-items: center;
-    justify-content: space-between;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding: 0 2px;
+
+    .bandMeta-details {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin: 2px;
+    }
   }
 
   h1 {
-    ${roughStyle}
     font-size: ${clampBuilder(400,1024,3,8)};
     font-weight: 1000;
     left: 0;
     line-height: 0.75;
     margin: 0;
     padding: 2px;
-    position: absolute;
     right: 0;
     text-transform: uppercase;
     top: 0;
   }
 
-  p {
-    font-size: 0.8rem;
-  }
-
   button {
     color: var(--theme-color);
     background: transparent;
-    border: none;
+    border: 1px solid #2e2e2e;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px black;
     cursor: pointer;
     font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
     position: absolute;
     top: 2px;
-    right: 2px;
+    right: 10px;
     z-index: 1;
   }
 `;
@@ -119,21 +119,24 @@ export default function BandDetails({ band, handleOnClose, visible, headerRef })
   return (
     <div className={styles(visible, bandImg, headerRef)}>
       {visible && <div className="bandWrapper">
-      <button type="button" onClick={handleOnClose}>
-        <FontAwesomeIcon icon={faCircleXmark} />
-      </button>
-        <h1>{band.name.split(",").reverse().join(" ")}</h1>
+        <button type="button" onClick={handleOnClose}>
+          <FontAwesomeIcon icon={faCircleXmark} />
+        </button>
         <div className="bandMeta">
-          <p>
-            {/* {`Playing on ${band.dateDisplay} from ${moment(startTime).format(
-              "LT"
-            )} to
-            ${moment(endTime).format("LT")} on the ${stages[band.stageId].name} (${
-              stages[band.stageId].location
-            })`} */}
-            {`Playing on ${band.dateDisplay}`}
-          </p>
-          {band.spotifyLink && <p><a href={band.spotifyLink} target="_blank"><FontAwesomeIcon icon={faMusic} /> Listen</a></p>}
+          <h1>{band.name.split(",").reverse().join(" ")}</h1>
+          <div className="bandImg"></div>
+          <div className="bandMeta-details">
+            <p>
+              {/* {`Playing on ${band.dateDisplay} from ${moment(startTime).format(
+                "LT"
+              )} to
+              ${moment(endTime).format("LT")} on the ${stages[band.stageId].name} (${
+                stages[band.stageId].location
+              })`} */}
+              {`Playing on ${band.dateDisplay}`}
+            </p>
+            {band.spotifyLink && <p><a href={band.spotifyLink} target="_blank"><FontAwesomeIcon icon={faMusic} /> Listen</a></p>}
+          </div>
         </div>
       </div>}
     </div>
