@@ -96,7 +96,7 @@ const styles = (visible, bandImg, headerRef) => css`
 
   button {
     color: var(--theme-color);
-    background: transparent;
+    background: #2e2e2e;
     border: 1px solid #2e2e2e;
     border-radius: 1rem;
     box-shadow: 0 0 5px black;

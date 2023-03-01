@@ -30,7 +30,6 @@ const scheduleStyles = css`
 `;
 
 //@TODO
-//schedule conflicts (done in stackblitz)
 //Firebase integration (schedule api, auth, user schedules)
 
 export default function Schedule() {

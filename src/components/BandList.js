@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { css } from "@emotion/css";
 import { DAYS } from "../App";
 import { roughStyle, stages } from "../utils/constants";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCirclePlus,
+  faCircleXmark
+} from "@fortawesome/free-solid-svg-icons";
 
 const styles = css`
   align-items: center;
@@ -55,6 +61,7 @@ const styles = css`
     background-clip: text;
     color: transparent;
     cursor: pointer;
+    display: flex;
     padding: 5px;
     text-transform: uppercase;
 
@@ -73,6 +80,10 @@ const styles = css`
       color: var(--theme-color);
       font-size: 1.75rem;
       padding: 4px 12px;
+
+      button.toggleUserSchedule {
+        color: var(--theme-color);
+      }
     }
 
     &.tier-3 {
@@ -82,18 +93,33 @@ const styles = css`
       padding: 4px 12px;
     }
 
-    &.selected,
-    &:hover {
+    &.userSelected {
       ${roughStyle}
       background-clip: border-box;
       color: var(--theme-color);
-      text-decoration: underline;
+
+      button.toggleUserSchedule {
+        color: var(--theme-color);
+      }
 
       &.tier-2 {
         background-color: var(--theme-color);
         color: #2e2e2e;
+
+        button.toggleUserSchedule {
+          color: #2e2e2e;
+        }
       }
     }
+  }
+
+  button.toggleUserSchedule {
+    background: transparent;
+    border: 0;
+    color: #2e2e2e;
+    font-size: 1rem;
+    margin-left: 6px;
+    padding: 0;
   }
 `;
 
@@ -104,6 +130,24 @@ export default function BandList({ bands, selectedBands, onClick }) {
     { key: DAYS.SUN, display: "Sunday" },
   ];
   const tiers = [1, 2, 3];
+
+  const [userSchedule, setUserSchedule] = useState(() => {
+    const saved = localStorage.getItem("userSchedule");
+    const initialValue = JSON.parse(saved);
+    return initialValue || {};
+  });
+
+  const onUserItemChange = (id) => {
+    setUserSchedule({
+      ...userSchedule,
+      [id]: !userSchedule[id],
+    });
+  };
+
+  useEffect(() => {
+    localStorage.setItem("userSchedule", JSON.stringify(userSchedule));
+  }, [userSchedule]);
+
   return (
     <div className={styles}>
       {dates.map((date) => {
@@ -114,6 +158,8 @@ export default function BandList({ bands, selectedBands, onClick }) {
               return (
                 <ul key={`${date.key}-${tier}`} className={`tier-${tier}`}>
                   {bands[date.key][tier].map((band) => {
+                    const isUserSelected = userSchedule[band.id];
+                    const userSelectionClass = isUserSelected ? 'userSelected' : '';
                     const { id, name, stageId, tier, time } = band;
                     return (
                       <li
@@ -122,9 +168,26 @@ export default function BandList({ bands, selectedBands, onClick }) {
                         // title={`${stages[stageId].location} Stage @ ${time}`}
                         className={`band tier-${tier} ${
                           selectedBands[id] ? "selected" : ""
-                        }`}
+                        } ${userSelectionClass}`}
                       >
                         {name.split(",").reverse().join(" ")}
+                        <button
+                          type="button"
+                          className="toggleUserSchedule"
+                          title={`${
+                            isUserSelected ? "Remove from" : "Add to"
+                          } my schedule`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onUserItemChange(band.id)
+                          }}
+                        >
+                          {isUserSelected ? (
+                            <FontAwesomeIcon icon={faCircleXmark} />
+                          ) : (
+                            <FontAwesomeIcon icon={faCirclePlus} />
+                          )}
+                        </button>
                       </li>
                     );
                   })}

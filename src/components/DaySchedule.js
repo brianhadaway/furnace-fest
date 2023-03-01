@@ -334,7 +334,7 @@ export default function DaySchedule({ bandsByDay }) {
 
   const [highlightConflicts, setHighlightConflicts] = useState(false);
 
-  const [userSchedule, setUserSchedule] = useState(() => {
+ const [userSchedule, setUserSchedule] = useState(() => {
     const saved = localStorage.getItem("userSchedule");
     const initialValue = JSON.parse(saved);
     return initialValue || {};
