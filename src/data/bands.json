@@ -8,7 +8,7 @@
       "2023-09-22 21:55",
       "2023-09-22 23:00:00"
     ],
-    "id": 87,
+    "id": 202387,
     "spotifyLink": "https://open.spotify.com/artist/1cSpfa4Un4NCOzeOKgGtG9?si=E2r5hvQySmKHtsL_VDPS5g",
     "bandImg": "/furnace-fest/assets/bands/mxpx.jpg",
     "tier": 1
@@ -22,7 +22,7 @@
       "2023-09-22 20:45:00",
       "2023-09-22 21:35:00"
     ],
-    "id": 58,
+    "id": 202358,
     "spotifyLink": "https://open.spotify.com/artist/17Mb968quDHpjCkIyq30QV?si=gmqQHDKiQGCTGP62TfQykA",
     "bandImg": "/furnace-fest/assets/bands/hatebreed.jpg",
     "tier": 2
@@ -36,7 +36,7 @@
       "2023-09-22 19:35:00",
       "2023-09-22 20:25:00"
     ],
-    "id": 3,
+    "id": 20233,
     "spotifyLink": "https://open.spotify.com/artist/5v61OSg53KaQxGMpErkBNp?si=uB6gKj_1QjO045yvSci2gg",
     "bandImg": "/furnace-fest/assets/bands/anberlin.jpg",
     "tier": 2
@@ -50,7 +50,7 @@
       "2023-09-22 15:25:00",
       "2023-09-22 16:05:00"
     ],
-    "id": 51,
+    "id": 202351,
     "spotifyLink": "https://open.spotify.com/artist/3nJWBJvK7uGvfp4iZh9CkN?si=BMuI5DOQQF6bnf0pTpZk_A",
     "bandImg": "/furnace-fest/assets/bands/relientk.jpg",
     "tier": 2
@@ -64,9 +64,9 @@
       "2023-09-22 20:50:00",
       "2023-09-22 21:45:00"
     ],
-    "id": 66,
+    "id": 202366,
     "spotifyLink": "https://open.spotify.com/artist/6Aymk2ThG16rJYjnOPlFN2?si=4NKprTcjSAOWdEg6gbOzoQ",
-    "bandImg": "",
+    "bandImg": "/furnace-fest/assets/bands/relientk.jpg",
     "tier": 3
   },
   {
@@ -78,7 +78,7 @@
       "2023-09-22 18:30:00",
       "2023-09-22 19:20:00"
     ],
-    "id": 64,
+    "id": 202364,
     "spotifyLink": "https://open.spotify.com/artist/36gdsrHzKZ0Wyb3uH7ZbEv?si=JT91Bq3pTdqrW8vtUvtMCQ",
     "bandImg": "/furnace-fest/assets/bands/braid.jpg",
     "tier": 3
@@ -92,7 +92,7 @@
       "2023-09-22 15:05:00",
       "2023-09-22 15:40:00"
     ],
-    "id": 90,
+    "id": 202390,
     "spotifyLink": "https://open.spotify.com/artist/3Zj2B8yAi8gHoR8vpsPatZ?si=NrHU8PLzShywEMok9zOHJw",
     "bandImg": "/furnace-fest/assets/bands/gideon.jpg",
     "tier": 3
@@ -106,7 +106,7 @@
       "2023-09-22 19:45:00",
       "2023-09-22 20:30:00"
     ],
-    "id": 77,
+    "id": 202377,
     "spotifyLink": "https://open.spotify.com/artist/2dTOWcCL0cYviin0Uz1lj4?si=gBmUpACoRd-2iJw1ZhaOYA",
     "bandImg": "/furnace-fest/assets/bands/holywars.jpg",
     "tier": 3
@@ -120,7 +120,7 @@
       "2023-09-22 18:25:00",
       "2023-09-22 19:05:00"
     ],
-    "id": 5,
+    "id": 20235,
     "spotifyLink": "https://open.spotify.com/artist/1FEgAMsvc3DM2OtT4dPn9i?si=jaaYdqvFR66F8hJUqb8kVA",
     "bandImg": "/furnace-fest/assets/bands/hopesfall.jpg",
     "tier": 3
@@ -134,7 +134,7 @@
       "2023-09-22 16:20:00",
       "2023-09-22 17:05:00"
     ],
-    "id": 6,
+    "id": 20236,
     "spotifyLink": "https://open.spotify.com/artist/0A5hWmrfSIIExWIb1bsWlo?si=6mDKdW4BTCSz0zIrDhPMHAm",
     "bandImg": "/furnace-fest/assets/bands/kidliberty.jpg",
     "tier": 3
@@ -148,9 +148,9 @@
       "2023-09-22 13:00:00",
       "2023-09-22 13:30:00"
     ],
-    "id": 12,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202312,
+    "spotifyLink": "https://open.spotify.com/artist/5ABfpj7Z00wfPiv2uW4MFm?si=VmgkfAGcQKCO6irN5WR6Xw",
+    "bandImg": "/furnace-fest/assets/bands/knucklepuck.jpg",
     "tier": 3
   },
   {
@@ -162,9 +162,9 @@
       "2023-09-22 14:35:00",
       "2023-09-22 15:10:00"
     ],
-    "id": 13,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202313,
+    "spotifyLink": "https://open.spotify.com/artist/1UmQbA1CBTV24SkkEymKnf?si=vPQyX-u2T-apHvnBb1Gc_w",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -176,9 +176,9 @@
       "2023-09-23 14:35:00",
       "2023-09-23 15:10:00"
     ],
-    "id": 15,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202315,
+    "spotifyLink": "https://open.spotify.com/artist/0VOvF0kfqCTRe37XzWQdvH?si=G52baMVvR3eBPvqZ9LBzuQ",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -190,9 +190,9 @@
       "2023-09-22 12:40:00",
       "2023-09-22 13:10:00"
     ],
-    "id": 78,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202378,
+    "spotifyLink": "https://open.spotify.com/artist/3nw6phs4P8q7lncRq3uurU?si=RmFNpGbeRwmJ6zyK4Cka7w",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -204,9 +204,9 @@
       "2023-09-22 12:55:00",
       "2023-09-22 13:30:00"
     ],
-    "id": 91,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202391,
+    "spotifyLink": "https://open.spotify.com/artist/1t5vg6SgMno0PEptG8duTk?si=v0OqoH7EToyxe6D5nOHIZQ",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -218,9 +218,9 @@
       "2023-09-22 13:25:00",
       "2023-09-22 14:00:00"
     ],
-    "id": 20,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202320,
+    "spotifyLink": "https://open.spotify.com/artist/55b0Gfm53udtGBs8mmNXrH?si=YFnABPNuQfW7K3CZDEt98A",
+    "bandImg": "/furnace-fest/assets/bands/normajean.jpg",
     "tier": 3
   },
   {
@@ -232,9 +232,9 @@
       "2023-09-22 17:35:00",
       "2023-09-22 18:10:00"
     ],
-    "id": 21,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202321,
+    "spotifyLink": "https://open.spotify.com/artist/5WFtLbVyCyRkHkwxePRrF9?si=d_W0oHsSRxWSUhIU5v88AQ",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -246,9 +246,9 @@
       "2023-09-22 16:15:00",
       "2023-09-22 16:50:00"
     ],
-    "id": 23,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202323,
+    "spotifyLink": "https://open.spotify.com/artist/0DkKBTgWxBnvYsOXDaoTVP?si=JHWjcxi9Qb-xsWAtxhHaSA",
+    "bandImg": "/furnace-fest/assets/bands/orthodox.jpg",
     "tier": 3
   },
   {
@@ -260,9 +260,9 @@
       "2023-09-22 12:00:00",
       "2023-09-22 12:25:00"
     ],
-    "id": 26,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202326,
+    "spotifyLink": "https://open.spotify.com/artist/4rOGGTXaYygtFIHsPgLKJv?si=L3xd5VdyQuSt3-OTOpg3lA",
+    "bandImg": "/furnace-fest/assets/bands/piebald.jpg",
     "tier": 3
   },
   {
@@ -274,9 +274,9 @@
       "2023-09-22 19:25:00",
       "2023-09-22 20:15:00"
     ],
-    "id": 27,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202327,
+    "spotifyLink": "https://open.spotify.com/artist/7toVzxZQU21OjB5PqXNvTF?si=l8WJSqQEQeyAzTFMEzHAKw",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -288,9 +288,9 @@
       "2023-09-22 12:20:00",
       "2023-09-22 12:45:00"
     ],
-    "id": 30,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202330,
+    "spotifyLink": "https://open.spotify.com/artist/4kMjXBfqp2w86Lzexf1AAO?si=tdFbjsNxSeiApxHW_-7eMg",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -302,9 +302,9 @@
       "2023-09-22 14:15:00",
       "2023-09-22 14:50:00"
     ],
-    "id": 32,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202332,
+    "spotifyLink": "https://open.spotify.com/artist/2Ph2Smx8KEva6aAyj8PLbe?si=ocCJGWyVSaqbA9LnbJFsbg",
+    "bandImg": "/furnace-fest/assets/bands/slowpulse.jpg",
     "tier": 3
   },
   {
@@ -316,9 +316,9 @@
       "2023-09-22 15:25:00",
       "2023-09-22 16:00:00"
     ],
-    "id": 34,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202334,
+    "spotifyLink": "https://open.spotify.com/artist/3DWWL4kwLZMBLsmVsbZYHR?si=Hhj6nSfaRACaOtu7UUFywg",
+    "bandImg": "/furnace-fest/assets/bands/sparta.jpg",
     "tier": 3
   },
   {
@@ -330,9 +330,9 @@
       "2023-09-22 13:45:00",
       "2023-09-22 14:20:00"
     ],
-    "id": 37,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202337,
+    "spotifyLink": "https://open.spotify.com/artist/1A0WloDoRE88uUwo3wensY?si=Zr-TUIXuQ-GZsbEMrluOZw",
+    "bandImg": "/furnace-fest/assets/bands/tayloracorn.jpg",
     "tier": 3
   },
   {
@@ -344,9 +344,9 @@
       "2023-09-22 17:05:00",
       "2023-09-22 17:40:00"
     ],
-    "id": 39,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202339,
+    "spotifyLink": "https://open.spotify.com/artist/60cGRl68qyCBMqZi3tiHEU?si=xrBqQHFkRYyQrhAlhKWu_g",
+    "bandImg": "/furnace-fest/assets/bands/wallsofjericho.jpg",
     "tier": 3
   },
   {
@@ -358,9 +358,9 @@
       "2023-09-22 17:55:00",
       "2023-09-22 18:35:00"
     ],
-    "id": 47,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202347,
+    "spotifyLink": "https://open.spotify.com/artist/24NfZyQ27ZunpzGesO85vH?si=8TYsXnwERsqaheCypcRfew",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -372,9 +372,9 @@
       "2023-09-22 20:35:00",
       "2023-09-22 21:30:00"
     ],
-    "id": 56,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202356,
+    "spotifyLink": "https://open.spotify.com/artist/3TfO6jzSxDaWZtM0DzaD8d?si=6DK5SkzURziS_IkdCIKxzQ",
+    "bandImg": "/furnace-fest/assets/bands/whitsett.jpg",
     "tier": 3
   },
   {
@@ -386,9 +386,9 @@
       "2023-09-22 17:20:00",
       "2023-09-22 18:15:00"
     ],
-    "id": 59,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202359,
+    "spotifyLink": "https://open.spotify.com/artist/3jHWCx8YiFqlbOmRR6f5Ul?si=RglpgkjbTga_yQ4DRvbm8Q",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -400,9 +400,9 @@
       "2023-09-22 12:10:00",
       "2023-09-22 12:40:00"
     ],
-    "id": 16,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202316,
+    "spotifyLink": "https://open.spotify.com/artist/5NU7mpGqMvlZpq63RajHOH?si=vCPwqXx-Tv-nCNk3JriFdA",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -414,9 +414,9 @@
       "2023-09-23 21:55:00",
       "2023-09-22 23:00:00"
     ],
-    "id": 92,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202392,
+    "spotifyLink": "https://open.spotify.com/artist/2qnpHrOzdmOo1S4ox3j17x?si=V4rNTafXRVauhae5U9F3fw",
+    "bandImg": "/furnace-fest/assets/bands/turnstile.jpg",
     "tier": 1
   },
   {
@@ -428,9 +428,9 @@
       "2023-09-23 20:45:00",
       "2023-09-23 21:35:00"
     ],
-    "id": 48,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202348,
+    "spotifyLink": "https://open.spotify.com/artist/2cyaobEho8uxhqLxwG7j6i?si=Uw_t67zXT5OOklC4tl00Rw",
+    "bandImg": "/furnace-fest/assets/bands/headautomatica.jpg",
     "tier": 2
   },
   {
@@ -442,9 +442,9 @@
       "2023-09-23 19:35:00",
       "2023-09-23 20:25:00"
     ],
-    "id": 79,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202379,
+    "spotifyLink": "https://open.spotify.com/artist/61awhbNK16ku1uQyXRsQj5?si=ULq_pVdNQgueEqhLggTKJQ",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 2
   },
   {
@@ -456,9 +456,9 @@
       "2023-09-23 17:20:00",
       "2023-09-23 18:15:00"
     ],
-    "id": 25,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202325,
+    "spotifyLink": "https://open.spotify.com/artist/1NUOfvAhA9AvsF1ISMkgHX?si=B_1wniHXQaq5aTiI9gagXw",
+    "bandImg": "/furnace-fest/assets/bands/saosin.jpg",
     "tier": 2
   },
   {
@@ -470,9 +470,9 @@
       "2023-09-23 20:50:00",
       "2023-09-23 21:45:00"
     ],
-    "id": 11,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202311,
+    "spotifyLink": "https://open.spotify.com/artist/31jvzuB4ikftPQZJwrYfCF?si=-d40Dt0ZS8C7OXqdycXeZA",
+    "bandImg": "/furnace-fest/assets/bands/entershikari.jpg",
     "tier": 2
   },
   {
@@ -484,9 +484,9 @@
       "2023-09-23 18:30:00",
       "2023-09-23 19:20:00"
     ],
-    "id": 63,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202363,
+    "spotifyLink": "https://open.spotify.com/artist/4uOeSBqJoBz5OrxrsrTboH?si=F5qbo2lPSB2wYCJJ4j_t-g",
+    "bandImg": "/furnace-fest/assets/bands/anxious.jpg",
     "tier": 3
   },
   {
@@ -498,9 +498,9 @@
       "2023-09-23 12:20:00",
       "2023-09-23 12:45:00"
     ],
-    "id": 1,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 20231,
+    "spotifyLink": "https://open.spotify.com/artist/2lt0aSPzPngGw8KsfLYRyF?si=I1GKyMhzT3Wy3tehDry5jw",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -512,9 +512,9 @@
       "2023-09-23 15:05:00",
       "2023-09-23 15:40:00"
     ],
-    "id": 93,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202393,
+    "spotifyLink": "https://open.spotify.com/artist/7nqSDaZKccpnUqjzedyZF4?si=TJ6L0E9sR_qAe8Ch_TpyiQ",
+    "bandImg": "/furnace-fest/assets/bands/thebronx.jpg",
     "tier": 3
   },
   {
@@ -526,9 +526,9 @@
       "2023-09-23 17:05:00",
       "2023-09-23 17:40:00"
     ],
-    "id": 10,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202310,
+    "spotifyLink": "https://open.spotify.com/artist/7FAAkDlPg6pg0860CIDzmu?si=vOdXUF8WSueyLwSyTl6RjQ",
+    "bandImg": "/furnace-fest/assets/bands/drain.jpg",
     "tier": 3
   },
   {
@@ -540,9 +540,9 @@
       "2023-09-23 16:20:00",
       "2023-09-23 17:05:00"
     ],
-    "id": 17,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202317,
+    "spotifyLink": "https://open.spotify.com/artist/3A6RBkFY3kND3Z5kXM3Cz3?si=s2vH0Y5RSOuTiebXcqduVw",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -554,9 +554,9 @@
       "2023-09-23 18:50:00",
       "2023-09-23 19:30:00"
     ],
-    "id": 18,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202318,
+    "spotifyLink": "https://open.spotify.com/artist/09RKiiT2NAJ7qYoAGOYu9w?si=PeSgmT-oTcWSD-B5o5p2Aw",
+    "bandImg": "/furnace-fest/assets/bands/foreignhands.jpg",
     "tier": 3
   },
   {
@@ -568,9 +568,9 @@
       "2023-09-23 17:55:00",
       "2023-09-23 18:35:00"
     ],
-    "id": 24,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202324,
+    "spotifyLink": "https://open.spotify.com/artist/4dJX4iJ0qbB4gjkeenbK2N?si=4yQ4AMADRliVXFmBdKhVGA",
+    "bandImg": "/furnace-fest/assets/bands/gorillabiscuits.jpg",
     "tier": 3
   },
   {
@@ -582,9 +582,9 @@
       "2023-09-23 16:15:00",
       "2023-09-23 16:50:00"
     ],
-    "id": 28,
+    "id": 202328,
     "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -596,9 +596,9 @@
       "2023-09-23 18:25:00",
       "2023-09-23 19:05:00"
     ],
-    "id": 29,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202329,
+    "spotifyLink": "https://open.spotify.com/artist/4Gmrt82h2vjGjnp67SG5Nw?si=X8fxFQFPQBiAV7Hnjia2ZQ",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -610,9 +610,9 @@
       "2023-09-23 12:10:00",
       "2023-09-23 12:40:00"
     ],
-    "id": 91,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202391,
+    "spotifyLink": "https://open.spotify.com/artist/70dru8oehK8CwnNzANx6CJ?si=gO_MLXK9SIGWNyWkJTz-Xg",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -624,9 +624,9 @@
       "2023-09-23 16:45:00",
       "2023-09-23 17:20:00"
     ],
-    "id": 35,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202335,
+    "spotifyLink": "https://open.spotify.com/artist/0nxo4nAEYNbNpA8wwNvqXY?si=MseHxHBORuiLKp5m5Ie1Hg",
+    "bandImg": "/furnace-fest/assets/bands/livingsacrifice.jpg",
     "tier": 3
   },
   {
@@ -638,9 +638,9 @@
       "2023-09-23 13:45:00",
       "2023-09-23 14:20:00"
     ],
-    "id": 36,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202336,
+    "spotifyLink": "https://open.spotify.com/artist/4G9wSdX0klmoHfjm9i6DLd?si=3gx48ucoQ0yShDfUX6whtQ",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -652,9 +652,9 @@
       "2023-09-23 15:25:00",
       "2023-09-23 16:05:00"
     ],
-    "id": 81,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202381,
+    "spotifyLink": "https://open.spotify.com/artist/2Tl7uZui4u9a3nXUM9VMei?si=6xY7qo6RSWmY3nL7ZpEnxA",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -666,9 +666,9 @@
       "2023-09-23 12:00:00",
       "2023-09-23 12:25:00"
     ],
-    "id": 41,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202341,
+    "spotifyLink": "https://open.spotify.com/artist/4g6ODwOQYRZLsP89kEoBIu?si=xHFn6MwLR_6NzVJ5q8_MlA",
+    "bandImg": "/furnace-fest/assets/bands/narrowhead.jpg",
     "tier": 3
   },
   {
@@ -680,9 +680,9 @@
       "2023-09-23 13:00:00",
       "2023-09-23 13:30:00"
     ],
-    "id": 46,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202346,
+    "spotifyLink": "https://open.spotify.com/artist/0UREuWUT6wPZoL1Gglwmm0?si=P3nXRo_ERbu_rY6epjMh9A",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -694,9 +694,9 @@
       "2023-09-23 19:45:00",
       "2023-09-23 20:30:00"
     ],
-    "id": 50,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202350,
+    "spotifyLink": "https://open.spotify.com/artist/6hW33nVHPElaXuG2hQ0QOp?si=KN1DJ1YTQuGnndQLHXnvkg",
+    "bandImg": "/furnace-fest/assets/bands/scowl.jpg",
     "tier": 3
   },
   {
@@ -708,9 +708,9 @@
       "2023-09-23 15:25:00",
       "2023-09-23 16:00:00"
     ],
-    "id": 52,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202352,
+    "spotifyLink": "https://open.spotify.com/artist/79HbBkVgOVUuVhuTJ50pIx?si=dWHdVlQ9RI678vcKAfpv5A",
+    "bandImg": "/furnace-fest/assets/bands/teenagewrist.jpg",
     "tier": 3
   },
   {
@@ -722,9 +722,9 @@
       "2023-09-23 12:40:00",
       "2023-09-23 13:10:00"
     ],
-    "id": 94,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202394,
+    "spotifyLink": "https://open.spotify.com/artist/1GVRgPtEC6sZFqvItIk3eg?si=K_3TiMDdSbaUYhBtxGFv-w",
+    "bandImg": "/furnace-fest/assets/bands/terror.jpg",
     "tier": 3
   },
   {
@@ -736,9 +736,9 @@
       "2023-09-23 14:35:00",
       "2023-09-23 15:10:00"
     ],
-    "id": 57,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202357,
+    "spotifyLink": "https://open.spotify.com/artist/5bIONi1B7DWN1Y090pLegM?si=J7iY0QjGTKGW6i-o6-yKNw",
+    "bandImg": "/furnace-fest/assets/bands/tfu.jpg",
     "tier": 3
   },
   {
@@ -750,9 +750,9 @@
       "2023-09-23 20:35:00",
       "2023-09-23 21:30:00"
     ],
-    "id": 62,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202362,
+    "spotifyLink": "https://open.spotify.com/artist/4pVWSc4qEC6U3yIjQleh90?si=jzHMQn3aQzWXEOUzu0V10g",
+    "bandImg": "/furnace-fest/assets/bands/trashtalk.jpg",
     "tier": 3
   },
   {
@@ -764,9 +764,9 @@
       "2023-09-23 15:55:00",
       "2023-09-23 16:30:00"
     ],
-    "id": 65,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202365,
+    "spotifyLink": "https://open.spotify.com/artist/3H5wolo8BHkr6ehzYiBQWH?si=-RQ8F5hnTQOXaqGau1Zu_A",
+    "bandImg": "/furnace-fest/assets/bands/wieldedsteel.jpg",
     "tier": 3
   },
   {
@@ -778,9 +778,9 @@
       "2023-09-23 13:45:00",
       "2023-09-23 14:20:00"
     ],
-    "id": 84,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202384,
+    "spotifyLink": "https://open.spotify.com/artist/6oHhpIAHJlyqi70DdfWeJX?si=mrRn6n1dQ5Gf0TbY6Z4HfQ",
+    "bandImg": "/furnace-fest/assets/bands/willhaven.jpg",
     "tier": 3
   },
   {
@@ -792,9 +792,9 @@
       "2023-09-23 19:25:00",
       "2023-09-23 20:15:00"
     ],
-    "id": 85,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202385,
+    "spotifyLink": "https://open.spotify.com/artist/0DbBwI2dpYty5Tl7bdSIjL?si=q3zNdXeAS8yy1jLOKr9fyQ",
+    "bandImg": "/furnace-fest/assets/bands/youthoftoday.jpg",
     "tier": 3
   },
   {
@@ -806,9 +806,9 @@
       "2023-09-23 17:35:00",
       "2023-09-23 18:10:00"
     ],
-    "id": 70,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202370,
+    "spotifyLink": "https://open.spotify.com/artist/2vqfIznyoJDjhrbNAueQ6s?si=IEteHfpjQWirT4820-2aIQ",
+    "bandImg": "/furnace-fest/assets/bands/zao.jpg",
     "tier": 3
   },
   {
@@ -820,9 +820,9 @@
       "2023-09-23 14:15:00",
       "2023-09-23 14:50:00"
     ],
-    "id": 71,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202371,
+    "spotifyLink": "https://open.spotify.com/artist/38tO9pZm2G0JjANgRFvC1a?si=guhZJ__9R2OPVA5X5lakuw",
+    "bandImg": "/furnace-fest/assets/bands/zulu.jpg",
     "tier": 3
   },
   {
@@ -834,9 +834,9 @@
       "2023-09-24 21:55:00",
       "2023-09-24 23:00:00"
     ],
-    "id": 49,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202349,
+    "spotifyLink": "https://open.spotify.com/artist/2Fjvft2Z56VrVjmYE5TkEi?si=H7YykYK6RlOk6ooTxPa_Ww",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 1
   },
   {
@@ -848,9 +848,9 @@
       "2023-09-24 20:45:00",
       "2023-09-24 21:35:00"
     ],
-    "id": 19,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202319,
+    "spotifyLink": "https://open.spotify.com/artist/6i0KVTOvm96T55mbp742ks?si=zJiPw3ZrTHG3fgvYFcI3uA",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 1
   },
   {
@@ -862,9 +862,9 @@
       "2023-09-24 19:35:00",
       "2023-09-24 20:25:00"
     ],
-    "id": 86,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202386,
+    "spotifyLink": "https://open.spotify.com/artist/7voCqDg5xgF1LZFrmbPS7w?si=ZTGpw3xARlaskLBQcNt9og",
+    "bandImg": "/furnace-fest/assets/bands/hastetheday.jpg",
     "tier": 2
   },
   {
@@ -876,9 +876,9 @@
       "2023-09-24 17:20:00",
       "2023-09-24 18:15:00"
     ],
-    "id": 88,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202388,
+    "spotifyLink": "https://open.spotify.com/artist/2JC4hZm1egeJDEolLsMwZ9?si=XIl6HV7wTYOcpB05bg4e3g",
+    "bandImg": "/furnace-fest/assets/bands/btbam.jpg",
     "tier": 2
   },
   {
@@ -890,9 +890,9 @@
       "2023-09-24 20:50:00",
       "2023-09-24 21:45:00"
     ],
-    "id": 4,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 20234,
+    "spotifyLink": "https://open.spotify.com/artist/3mvTAjG7rcyk7DQzLwauzV?si=GL0AhWe6S7SQF4INBbcM8w",
+    "bandImg": "/furnace-fest/assets/bands/bouncingsouls.jpg",
     "tier": 2
   },
   {
@@ -904,9 +904,9 @@
       "2023-09-24 17:55:00",
       "2023-09-24 18:35:00"
     ],
-    "id": 8,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 20238,
+    "spotifyLink": "https://open.spotify.com/artist/2KMe9muhC1eg1kQq6veejU?si=j1Eh6PCHRcqNLdE4XnsL7A",
+    "bandImg": "/furnace-fest/assets/bands/pleaforpurging.jpg",
     "tier": 3
   },
   {
@@ -918,9 +918,9 @@
       "2023-09-24 16:45:00",
       "2023-09-24 17:20:00"
     ],
-    "id": 0,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 20230,
+    "spotifyLink": "https://open.spotify.com/artist/7eSbps3Uha3MMBNWhMYa2H?si=_QMfiV-9TSSFKFrViV8dpw",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -932,9 +932,9 @@
       "2023-09-24 18:50:00",
       "2023-09-24 19:30:00"
     ],
-    "id": 2,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 20232,
+    "spotifyLink": "https://open.spotify.com/artist/7eJA8CZoXCETi9axIfBFGT?si=uQqkLt4tRlenVzu0H7GtNw",
+    "bandImg": "/furnace-fest/assets/bands/ascitiesburn.jpg",
     "tier": 3
   },
   {
@@ -946,9 +946,9 @@
       "2023-09-24 19:25:00",
       "2023-09-24 20:15:00"
     ],
-    "id": 7,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 20237,
+    "spotifyLink": "https://open.spotify.com/artist/3IN6GYf5xcFCPn6hfGVcZT?si=51xT3-E8Qo-6PRRMILDUJQ",
+    "bandImg": "/furnace-fest/assets/bands/bbabh.jpg",
     "tier": 3
   },
   {
@@ -960,9 +960,9 @@
       "2023-09-24 13:45:00",
       "2023-09-24 14:20:00"
     ],
-    "id": 14,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202314,
+    "spotifyLink": "https://open.spotify.com/artist/4ZWRLOs7c4drt9mKGc0Ds0?si=aj5HmItgQSOsOFrherC46A",
+    "bandImg": "/furnace-fest/assets/bands/callousdaoboys.jpg",
     "tier": 3
   },
   {
@@ -974,9 +974,9 @@
       "2023-09-24 13:45:00",
       "2023-09-24 14:20:00"
     ],
-    "id": 22,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202322,
+    "spotifyLink": "https://open.spotify.com/artist/7KqVvL7NOdUWyQg2B63cck?si=LwMW8HvrRL6fr1QZqaGkBA",
+    "bandImg": "/furnace-fest/assets/bands/casey.jpg",
     "tier": 3
   },
   {
@@ -988,9 +988,9 @@
       "2023-09-24 15:25:00",
       "2023-09-24 16:05:00"
     ],
-    "id": 96,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202396,
+    "spotifyLink": "https://open.spotify.com/artist/3tdRDE8jjFhU1tkKFnCFQ2?si=9CaURxy8R4K68pGiLdTlPA",
+    "bandImg": "/furnace-fest/assets/bands/chasingvictory.jpg",
     "tier": 3
   },
   {
@@ -1002,9 +1002,9 @@
       "2023-09-24 13:25:00",
       "2023-09-24 14:00:00"
     ],
-    "id": 31,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202331,
+    "spotifyLink": "https://open.spotify.com/artist/1L3hqVCHSL1Ajy3m0z1bAT?si=VhD0ifgyRYizzdlSv-RdOw",
+    "bandImg": "/furnace-fest/assets/bands/defeater.jpg",
     "tier": 3
   },
   {
@@ -1016,9 +1016,9 @@
       "2023-09-24 13:00:00",
       "2023-09-24 13:30:00"
     ],
-    "id": 33,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202333,
+    "spotifyLink": "https://open.spotify.com/artist/1Enp9WKfk0aI9CFi2YGBq7?si=9Oqkc1QaSPGuLw-_GSllbg",
+    "bandImg": "/furnace-fest/assets/bands/fsf.jpg",
     "tier": 3
   },
   {
@@ -1030,9 +1030,9 @@
       "2023-09-24 15:05:00",
       "2023-09-24 15:40:00"
     ],
-    "id": 80,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202380,
+    "spotifyLink": "https://open.spotify.com/artist/4bMVHZcJe0AmG8f3b120qL?si=6Ned9joFTguIVakt8odHCw",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -1044,9 +1044,9 @@
       "2023-09-24 12:55:00",
       "2023-09-24 13:30:00"
     ],
-    "id": 40,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202340,
+    "spotifyLink": "https://open.spotify.com/artist/3mXRsBnrsCGHfULe4mmoPg?si=IUqPd4hwQoOlnskPfERkIQ",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -1058,9 +1058,9 @@
       "2023-09-24 12:00:00",
       "2023-09-24 12:25:00"
     ],
-    "id": 42,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202342,
+    "spotifyLink": "https://open.spotify.com/artist/4b3YHpER4myVsne2QK3kXe?si=IGregy2pSB6tQltP1kJuLA",
+    "bandImg": "/furnace-fest/assets/bands/inclination.jpg",
     "tier": 3
   },
   {
@@ -1072,9 +1072,9 @@
       "2023-09-24 15:55:00",
       "2023-09-24 16:30:00"
     ],
-    "id": 43,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202343,
+    "spotifyLink": "https://open.spotify.com/artist/7ExfUEJVEkXckOrMJLjoxE?si=O3CXfN97SBGjtEajweq_Ag",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -1086,9 +1086,9 @@
       "2023-09-24 14:35:00",
       "2023-09-24 15:10:00"
     ],
-    "id": 44,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202344,
+    "spotifyLink": "https://open.spotify.com/artist/3uFWRtKjp2E2Y1QmJPaKNC?si=oB85sYeeRTuMs_3JeRxHGQ",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -1100,9 +1100,9 @@
       "2023-09-24 16:20:00",
       "2023-09-24 17:05:00"
     ],
-    "id": 45,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202345,
+    "spotifyLink": "https://open.spotify.com/artist/2FjHrXsNltj2EKpHqXgkq9?si=bmKdxPUSR-iJI5BQaPTiZg",
+    "bandImg": "/furnace-fest/assets/bands/judge.jpg",
     "tier": 3
   },
   {
@@ -1114,9 +1114,9 @@
       "2023-09-24 20:35:00",
       "2023-09-24 21:30:00"
     ],
-    "id": 53,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202353,
+    "spotifyLink": "https://open.spotify.com/artist/17Ht3puBDQIHTXvQTYYI3b?si=wg5k2mr9QDi8fC4P6lScYw",
+    "bandImg": "/furnace-fest/assets/bands/mae.jpg",
     "tier": 3
   },
   {
@@ -1128,9 +1128,9 @@
       "2023-09-24 18:25:00",
       "2023-09-24 19:05:00"
     ],
-    "id": 60,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202360,
+    "spotifyLink": "https://open.spotify.com/artist/4us4NMG5wuqdUZvthZrj0Q?si=hQMhgH27S7yFU6S0w-7nYQ",
+    "bandImg": "/furnace-fest/assets/bands/militariegun.jpg",
     "tier": 3
   },
   {
@@ -1142,9 +1142,9 @@
       "2023-09-24 12:10:00",
       "2023-09-24 12:40:00"
     ],
-    "id": 97,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202397,
+    "spotifyLink": "https://open.spotify.com/artist/782HAMHn2gK7WqWZZ7aJ9D?si=65X1TvUwT9Ge-BLcuanZCQ",
+    "bandImg": "/furnace-fest/assets/bands/onekingdown.jpg",
     "tier": 3
   },
   {
@@ -1156,9 +1156,9 @@
       "2023-09-24 15:25:00",
       "2023-09-24 16:00:00"
     ],
-    "id": 83,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202383,
+    "spotifyLink": "https://open.spotify.com/artist/2eKbDx0Tbc2EcStEB54E51?si=06tgKphiS9ePkItUKaPp4A",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -1170,9 +1170,9 @@
       "2023-09-24 19:45:00",
       "2023-09-24 20:30:00"
     ],
-    "id": 67,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202367,
+    "spotifyLink": "https://open.spotify.com/artist/4Jmw3mH3e01xlxAPta2Tqe?si=Oft4en2iRTSs_MdnuI_LPQ",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -1184,9 +1184,9 @@
       "2023-09-24 17:35:00",
       "2023-09-24 18:10:00"
     ],
-    "id": 68,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202368,
+    "spotifyLink": "https://open.spotify.com/artist/68qsduRCs8caw95bbF4IDD?si=WlTd48sMQJOfa5XJK1iWQA",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -1198,9 +1198,9 @@
       "2023-09-24 14:15:00",
       "2023-09-24 14:50:00"
     ],
-    "id": 69,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202369,
+    "spotifyLink": "https://open.spotify.com/artist/1SQ5kDSYuCb4qOJx5itFxz?si=aROv323eQv-oVnbNEWeJ1A",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -1212,9 +1212,9 @@
       "2023-09-24 14:35:00",
       "2023-09-24 15:10:00"
     ],
-    "id": 98,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202398,
+    "spotifyLink": "https://open.spotify.com/artist/71t7oZKCfZSYnCjaBVUcU6?si=yHgAht1iSQmJlYWuvIkP-Q",
+    "bandImg": "/furnace-fest/assets/bands/FurnaceFest.jpg",
     "tier": 3
   },
   {
@@ -1226,9 +1226,9 @@
       "2023-09-24 16:15:00",
       "2023-09-24 16:50:00"
     ],
-    "id": 73,
-    "spotifyLink": "http://www.spotify.com",
-    "bandImg": "/furnace-fest/assets/bands/XXXX.jpg",
+    "id": 202373,
+    "spotifyLink": "https://open.spotify.com/artist/39cSG80bKnk96yuvGv5KlT?si=i__pUs2YT-yOMzOnGXaYvQ",
+    "bandImg": "/furnace-fest/assets/bands/valleyheart.jpg",
     "tier": 3
   }
 ]

@@ -3,6 +3,7 @@ import { css } from "@emotion/css";
 import moment from "moment";
 import { roughStyle, stages } from "../utils/constants";
 import rough from '../assets/rough.png';
+import texture from '../assets/wrinkle.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleXmark,
@@ -24,6 +25,8 @@ const clampBuilder = ( minWidthPx, maxWidthPx, minFontSize, maxFontSize ) => {
 
 const styles = (visible, bandImg, headerRef) => css`
   background-color: var(--theme-color);
+  background-image: url(${texture});
+  background-size: cover;
   color: var(--theme-color);
   height: calc(100vh - ${headerRef ? headerRef.offsetHeight : 0}px);
   max-height: -webkit-fill-available;
@@ -42,7 +45,7 @@ const styles = (visible, bandImg, headerRef) => css`
     background-blend-mode: luminosity;
     background-color: var(--theme-color);
     background-image: url(${rough}), url(${bandImg});
-    background-position: top center;
+    background-position: center;
     background-repeat: repeat, no-repeat;
     background-size: contain, contain;
     content: '';
