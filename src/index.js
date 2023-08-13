@@ -7,9 +7,10 @@ import { HashRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    {/*  <HashRouter>
       <App/>
-    </HashRouter>
+    </HashRouter>*/}
+    <h1 style={{color: 'white'}}>Oops</h1>
   </React.StrictMode>
 );
 
