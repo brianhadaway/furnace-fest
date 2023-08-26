@@ -2,8 +2,12 @@ import React from "react";
 import { css } from "@emotion/css";
 import { Link, Outlet, useParams } from "react-router-dom";
 import { DAYS } from "../App";
+import texture from '../assets/wrinkle.png';
 
 const scheduleStyles = css`
+  background-color: var(--theme-color);
+  background-image: url(${texture});
+  background-size: cover;
   padding: 8px;
 
   .day-nav {
@@ -15,15 +19,17 @@ const scheduleStyles = css`
 
     a {
       margin: 0 5px;
+      padding: 0 5px;
       text-decoration: none;
 
       &.day-active {
-        background-color: #15aad4;
+        background-color: black;
         font-weight: bold;
+        border-bottom: 5px solid black;
       }
 
       &:hover:not(.day-active) {
-        background-color: white;
+        background-color: black;
       }
     }
   }

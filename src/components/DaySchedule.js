@@ -13,24 +13,24 @@ import mixpanel from "mixpanel-browser";
 
 import exportAsImage from "../utils/exportAsImage";
 import checkForConflicts from "../utils/checkForConflicts";
-import { stages } from "../utils/constants";
+import { roughStyle, stages } from "../utils/constants";
 
 const scheduleStyles = css`
-  --border-radius: 6px;
-  --stage0color: #15aad4;
-  --stage1color: #3e3e3e;
-  --stage2color: #dcdcdc;
-  --stage0text: white;
-  --stage1text: white;
-  --stage2text: black;
+  --border-radius: 0;
+  --stage0color: black;
+  --stage1color: black;
+  --stage2color: black;
+  --stage0text: var(--theme-color);
+  --stage1text: var(--theme-color);
+  --stage2text: var(--theme-color);
   --column-gap: 20px;
-  --album-play-color: dodgerblue;
-  --user-color: orange;
+  --album-play-color: var(--theme-color);
+  --user-color: blue;
 
   .grid-line {
-    border-bottom: 1px dashed gray;
-    border-top: 1px dashed gray;
-    color: gray;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    color: black;
     display: none;
     grid-column-start: 1;
     grid-column-end: 6;
@@ -144,11 +144,12 @@ const scheduleStyles = css`
     --item-color: gray;
     --text-color: white;
     --text-shadow: black;
-    --box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
-    background: var(--item-color);
+
+    ${roughStyle}
+    //background: var(--item-color);
     border-radius: var(--border-radius);
-    border: 2px solid var(--item-color);
-    color: var(--text-color);
+    border: 2px solid transparent;
+    color: var(--theme-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -163,36 +164,14 @@ const scheduleStyles = css`
       margin-bottom: 0;
     }
 
-    &.stage-0 {
-      --item-color: var(--stage0color);
-      --text-color: var(--stage0text);
-    }
-
-    &.stage-1 {
-      --item-color: var(--stage1color);
-      --text-color: var(--stage1text);
-    }
-
-    &.stage-2 {
-      --item-color: var(--stage2color);
-      --text-color: var(--stage2text);
-      --text-shadow: white;
-    }
-
     &.album-play {
       border-right: 6px solid var(--album-play-color);
       padding-right: 10px;
     }
 
     &.user-selected {
-      background: repeating-linear-gradient(
-          45deg,
-          rgba(0, 0, 0, 0.1) 0px,
-          rgba(0, 0, 0, 0.1) 20px,
-          var(--item-color) 20px,
-          var(--item-color) 40px
-        ),
-        var(--item-color);
+      background-color: black;
+      background-size: 0;
       position: relative;
 
       &.has-conflict {
@@ -203,7 +182,7 @@ const scheduleStyles = css`
     .show-info-wrapper {
       display: flex;
       flex-direction: column;
-      justify-content: end;
+      justify-content: start;
       text-shadow: 0 0 2px var(--text-shadow);
       z-index: 2;
     }
@@ -255,8 +234,13 @@ const scheduleStyles = css`
     }
   }
 
-  .userScheduleToggle {
+  .userScheduleToggle, .downloadCurrentSchedule {
     margin: 10px 0 0;
+
+    &:hover {
+      background: var(--theme-color) !important;
+      color: black;
+    }
   }
 
   .conflicts-wrapper {
@@ -405,7 +389,8 @@ export default function DaySchedule({ bandsByDay }) {
           {showUserSchedule ? " Show Full Schedule" : " Show My Schedule"}
         </div>
         <div
-          className="date-pill"
+          className="date-pill downloadCurrentSchedule"
+          style={{marginLeft: 0}}
           title="Download current schedule view"
           onClick={() =>{
             exportAsImage(exportRef.current, `Furnace Fest Schedule - ${day}`);
@@ -415,7 +400,7 @@ export default function DaySchedule({ bandsByDay }) {
         >
           <FontAwesomeIcon icon={faCloudArrowDown} /> Download current view
         </div>
-        <div className="conflicts-wrapper">
+        <div className="conflicts-wrapper" style={{color: "var(--theme-color)"}}>
           {isInIframe && downloadAttempted && <div>If your image didn't download, <a href={`https://brianhadaway.github.io/furnace-fest/#/schedule/${day}`} target="_blank" rel="noreferrer">click here</a> and try again.</div>}
           <label>
             <input

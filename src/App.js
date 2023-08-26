@@ -14,7 +14,7 @@ import DaySchedule from "./components/DaySchedule";
 
 import texture from './assets/wrinkle.png';
 
-const navEnabled = false;
+const navEnabled = true;
 
 export const DAYS = Object.freeze({
   FRI: "friday",
@@ -33,6 +33,10 @@ const styles = css`
 
   * {
     box-sizing: border-box;
+  }
+
+  html, body {
+    background-color: var(--theme-color);
   }
 
   header {
@@ -221,7 +225,7 @@ export default function App() {
 
         {!isInIframe && navEnabled && (
           <nav className="site-nav">
-            <Link to="/">Home | </Link>
+            <Link to="/">Flyer | </Link>
             <Link to="/schedule/friday">Schedule</Link>
           </nav>
         )}
